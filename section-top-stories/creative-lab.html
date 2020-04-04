@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'sakalfont';
+            src: url(fonts/EkMukta-Regular.ttf) format("truetype"), url(https://www.esakal.com/sites/esakal/themes/smg980/fonts/ekmukta/EkMukta-Regular.eot) format("eot"), url(https://www.esakal.com/sites/esakal/themes/smg980/fonts/ekmukta/EkMukta-Regular.svg) format("svg")
+        }
+        
+        * {
+            /* box-shadow: 0 0 0 1px green; */
+        }
+        
+        body {
+            max-width: 970px;
+            font-family: sakalfont;
+            margin: 0 auto;
+        }
+        
+        .top-stories-art-img img {
+            height: auto;
+            width: 100%;
+        }
+        
+        .article-title-description .article-location {
+            font-size: 11px;
+            font-weight: bold;
+            line-height: 1.1;
+            color: #004b8c;
+            border-bottom: 1px solid #3F3D3D;
+        }
+        
+        .article-title-description .article-title {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+        
+        .article-title-description .article-description,
+        .post-time-and-comment {
+            font-size: 13px;
+            line-height: 1.2;
+            color: #7b7a7a;
+            overflow: hidden;
+            font-weight: 500;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+        
+        .more-top-stories center span {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .more-top-stories center {
+            display: inline;
+            margin-left: 10px;
+            color: white
+        }
+        
+        .more-top-stories {
+            background: #164B8C;
+        }
+        
+        .more-top-stories .cl-bg span {
+            color: white;
+        }
+        
+        .more-top-stories .cl-bg center span:nth-child(1) {
+            font-size: 12px;
+            margin-left: -14.9%;
+        }
+        
+        .more-top-stories .cl-bg center span:nth-child(2) {
+            font-size: 12px;
+        }
+        
+        .more-top-stories .cl-bg center span:nth-child(2):before,
+        .more-top-stories .cl-bg center span:nth-child(1):before {
+            display: none;
+        }
+        
+        @media(max-width:768px) {
+            .more-top-stories-articles {
+                padding: 16px 0px;
+                border-bottom: 1px solid gainsboro;
+            }
+        }
+        
+        @media(min-width: 768px) {
+            .cl-section div:nth-child(2) {
+                overflow-y: hidden;
+            }
+            .cl-section .article-title-description {
+                border-bottom: unset;
+            }
+            .more-top-stories .cl-bg {
+                background: #164B8C;
+                height: 100%;
+                width: 100%;
+                color: white;
+            }
+            .more-top-stories .cl-bg center {
+                width: 70%;
+                padding-left: 12%;
+            }
+            .article-title-description .article-title {
+                color: #004b8c;
+            }
+            .article-title-description {
+                border-bottom: 1px solid #2E5F8A;
+            }
+            .more-top-stories center span {
+                font-weight: 600;
+                font-size: 16px;
+                color: #004b8c;
+            }
+            .more-top-stories {
+                background: white;
+            }
+            .more-top-stories center span:before {
+                content: "";
+                position: absolute;
+                top: 22px;
+                width: 24%;
+                border-bottom: 3px solid gray;
+            }
+            .more-top-stories .cl-bg center span:nth-child(3):before {
+                top: 19%;
+                width: 17%;
+                border-bottom: 3px solid white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- more top Stories -->
+    <div class="d-flex flex-wrap">
+        <div class="col-xs-12 col-md-2 more-top-stories pr-md-0 pt-2 pb-2 pt-md-0">
+
+            <center class="d-md-block float-md-right"><span>More Top Stories</span></center>
+        </div>
+        <div class="col-xs-12 col-md-10">
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-row pb-md-4">
+
+                <div class="col-5 col-md-4 pl-2 pt-4 pt-md-0">
+                    <div class="top-stories-art-img">
+                        <div class="field field-name-field-image field-type-image field-label-hidden">
+                            <div class="field-items">
+                                <div class="field-item even">
+                                    <a href="/citizen-journalism/terror-dogs-parvati-village-area-268871"><img class="adaptive-image img-responsive" data-adaptive-image-breakpoint="1280" src="https://i.pinimg.com/originals/f8/ba/5b/f8ba5b6e9b6331328232d3c2fb896a09.jpg" width="205" height="115" alt="4dog_26.jpg" title="4dog_26.jpg"
+                                            style="display: block;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-title-description col-7 col-md-8 p-0 ">
+                    <div class="d-inline-block article-location">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                                            6 h ago 
+                                        </span>
+                        <span class="comments pl-1">
+                                            633 comments
+                                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-row pb-md-4">
+
+                <div class="col-5 col-md-4 pl-2 pt-4 pt-md-0">
+                    <div class="top-stories-art-img">
+                        <div class="field field-name-field-image field-type-image field-label-hidden">
+                            <div class="field-items">
+                                <div class="field-item even">
+                                    <a href="/citizen-journalism/terror-dogs-parvati-village-area-268871"><img class="adaptive-image img-responsive" data-adaptive-image-breakpoint="1280" src="https://i.pinimg.com/originals/f8/ba/5b/f8ba5b6e9b6331328232d3c2fb896a09.jpg" width="205" height="115" alt="4dog_26.jpg" title="4dog_26.jpg"
+                                            style="display: block;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-title-description col-7 col-md-8 p-0 ">
+                    <div class="d-inline-block article-location">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                                                6 h ago 
+                                            </span>
+                        <span class="comments pl-1">
+                                                633 comments
+                                            </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-row pb-md-4">
+
+                <div class="col-5 col-md-4 pl-2 pt-4 pt-md-0">
+                    <div class="top-stories-art-img">
+                        <div class="field field-name-field-image field-type-image field-label-hidden">
+                            <div class="field-items">
+                                <div class="field-item even">
+                                    <a href="/citizen-journalism/terror-dogs-parvati-village-area-268871"><img class="adaptive-image img-responsive" data-adaptive-image-breakpoint="1280" src="https://i.pinimg.com/originals/f8/ba/5b/f8ba5b6e9b6331328232d3c2fb896a09.jpg" width="205" height="115" alt="4dog_26.jpg" title="4dog_26.jpg"
+                                            style="display: block;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-title-description col-7 col-md-8 p-0 ">
+                    <div class="d-inline-block article-location">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                                                    6 h ago 
+                                                </span>
+                        <span class="comments pl-1">
+                                                    633 comments
+                                                </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-row pb-md-4">
+
+                <div class="col-5 col-md-4 pl-2 pt-4 pt-md-0">
+                    <div class="top-stories-art-img">
+                        <div class="field field-name-field-image field-type-image field-label-hidden">
+                            <div class="field-items">
+                                <div class="field-item even">
+                                    <a href="/citizen-journalism/terror-dogs-parvati-village-area-268871"><img class="adaptive-image img-responsive" data-adaptive-image-breakpoint="1280" src="https://i.pinimg.com/originals/f8/ba/5b/f8ba5b6e9b6331328232d3c2fb896a09.jpg" width="205" height="115" alt="4dog_26.jpg" title="4dog_26.jpg"
+                                            style="display: block;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-title-description col-7 col-md-8 p-0 ">
+                    <div class="d-inline-block article-location">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                                                        6 h ago 
+                                                    </span>
+                        <span class="comments pl-1">
+                                                        633 comments
+                                                    </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- end more top stories -->
+    <div class="d-flex flex-wrap cl-section">
+
+        <div class="col-12 col-md-3 more-top-stories pr-md-0 pt-1 pb-1 pt-md-0 pl-md-0">
+            <div class="cl-bg">
+                <center class="d-inline-block float-left mt-md-2">
+                    <span class="mr-3">Paid content</span><span>About</span>
+                    <span class="d-block">Creative innovation</span></center>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap col-12 col-md-9">
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-column cb-articles col-12 col-md-3 pb-md-4 pl-md-0">
+
+                <div class="pl-2 pt-md-0 p-md-0">
+                    <div class="top-stories-art-img">
+
+                        <a href="/"><img src="https://www.bard.edu/files/pr/main_news_image.php?id=16647" alt="4dog_26.jpg" title="4dog_26.jpg">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="article-title-description p-0 ml-0 col-7 col-md-12">
+                    <div class="d-none d-md-inline-block article-location mb-md-2">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title mb-md-3">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                            6 h ago 
+                        </span>
+                        <span class="comments pl-1">
+                            633 comments
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-column cb-articles col-12 col-md-3 pb-md-4 pl-md-0">
+
+                <div class="pl-2 pt-md-0 p-md-0">
+                    <div class="top-stories-art-img">
+
+                        <a href="/"><img src="https://www.bard.edu/files/pr/main_news_image.php?id=16647" alt="4dog_26.jpg" title="4dog_26.jpg">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="article-title-description p-0 ml-0 col-7 col-md-12">
+                    <div class="d-none d-md-inline-block article-location mb-md-2">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title mb-md-3">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                                6 h ago 
+                            </span>
+                        <span class="comments pl-1">
+                                633 comments
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-column cb-articles col-12 col-md-3 pb-md-4 pl-md-0">
+
+                <div class="pl-2 pt-md-0 p-md-0">
+                    <div class="top-stories-art-img">
+
+                        <a href="/"><img src="https://www.bard.edu/files/pr/main_news_image.php?id=16647" alt="4dog_26.jpg" title="4dog_26.jpg">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="article-title-description p-0 ml-0 col-7 col-md-12">
+                    <div class="d-none d-md-inline-block article-location mb-md-2">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title mb-md-3">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                                    6 h ago 
+                                </span>
+                        <span class="comments pl-1">
+                                    633 comments
+                                </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles d-flex flex-row-reverse flex-md-column cb-articles col-12 col-md-3 pb-md-4 pl-md-0">
+
+                <div class="pl-2 pt-md-0 p-md-0">
+                    <div class="top-stories-art-img">
+
+                        <a href="/"><img src="https://www.bard.edu/files/pr/main_news_image.php?id=16647" alt="4dog_26.jpg" title="4dog_26.jpg">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="article-title-description p-0 ml-0 col-7 col-md-12">
+                    <div class="d-none d-md-inline-block article-location mb-md-2">
+                        अनंतनाग
+                    </div>
+                    <div class="article-title mb-md-3">
+                        अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                    </div>
+                    <div class="article-description">
+                        अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                    </div>
+                    <div class="post-time-and-comment mt-2">
+                        <span class="time">
+                                        6 h ago 
+                                    </span>
+                        <span class="comments pl-1">
+                                        633 comments
+                                    </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
