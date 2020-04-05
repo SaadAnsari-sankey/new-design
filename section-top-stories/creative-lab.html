@@ -6,6 +6,7 @@
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -45,10 +46,29 @@
             border-bottom: 1px solid #3F3D3D;
         }
         
+        .rf-section .article-title-description .article-title {
+            font-size: 13px;
+            -webkit-line-clamp: 1;
+            max-height: 13px
+        }
+        
+        .rf-section .article-title-description .article-description {
+            font-size: 12px;
+            -webkit-line-clamp: 2;
+            color: #353434;
+            max-height: 26px;
+            font-weight: bold;
+        }
+        
+        .rf-section .article-title-description .post-time-and-comment {
+            font-size: 9px;
+        }
+        
         .article-title-description .article-title {
             font-size: 15px;
             font-weight: 600;
             line-height: 1.2;
+            max-height: 36px;
             color: black;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -62,6 +82,7 @@
         .post-time-and-comment {
             font-size: 13px;
             line-height: 1.2;
+            max-height: 60px;
             color: #7b7a7a;
             overflow: hidden;
             font-weight: 500;
@@ -105,14 +126,121 @@
             display: none;
         }
         
+        .rf-sub-section .article-title {
+            color: #004b8c;
+        }
+        
+        .rf-sub-section .article-title:before {
+            content: "";
+            position: absolute;
+            color: black;
+            left: 0;
+        }
+        
+        .rf-sub-section .rf-blocks-article-one .article-title:before {
+            content: "1.";
+        }
+        
+        .rf-sub-section .rf-blocks-article-others:nth-child(2) .article-title:before {
+            content: "2.";
+        }
+        
+        .rf-sub-section .rf-blocks-article-others:nth-child(3) .article-title:before {
+            content: "3.";
+        }
+        
+        .rf-sub-section-title {
+            color: #333131;
+        }
+        
+        .rf-section-news-container .article-title-description:after {
+            content: "";
+            position: absolute;
+            width: 92%;
+            bottom: 3px;
+            border-bottom: 1px solid #b3afaf;
+        }
+        
+        .ca-sak-lab,
+        .rf-angular-backet {
+            display: flex;
+            width: 78px;
+            font-size: 15px;
+            position: absolute;
+            font-weight: bold;
+            bottom: 10px;
+            right: 3px;
+            color: white;
+        }
+        
+        .rf-angular-backet {
+            ont-size: 16px;
+            width: 10px;
+            right: 23px;
+            font-weight: 600;
+            top: 4px;
+        }
+        
         @media(max-width:768px) {
+            .rf-sub-section-title .rf-title {
+                margin-left: 14%;
+            }
+            .rf-sub-section-title .plus-sign {
+                position: absolute;
+                left: 10px;
+            }
+            .rf-sub-section-title .angle-sign {
+                position: absolute;
+                right: 10px;
+            }
+            .rf-sub-section-title {
+                background: #D2D2D2;
+            }
             .more-top-stories-articles {
                 padding: 16px 0px;
                 border-bottom: 1px solid gainsboro;
             }
+            .rf-sub-section-title {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                width: 100%;
+            }
+            .rf-section-news-container {
+                background: #F3F3F3;
+            }
+            .more-top-stories .rf-bg center span:nth-child(1),
+            .more-top-stories .rf-bg center span:nth-child(2) {
+                font-size: 16px;
+            }
         }
         
         @media(min-width: 768px) {
+            .rf-section-news-container .article-title-description:after {
+                width: 90%;
+                bottom: 3px;
+            }
+            .rf-sub-section-title {
+                margin: 0 auto;
+                color: #777777;
+            }
+            .more-top-stories .cl-bg .rf-bg center span:nth-child(2),
+            .more-top-stories .cl-bg .rf-bg center span:nth-child(1) {
+                font-size: 16px;
+                margin-left: 0px;
+                text-align: left;
+            }
+            .more-top-stories .cl-bg .rf-bg span {
+                color: #164B8C;
+            }
+            .more-top-stories .cl-bg .rf-bg center span:nth-child(2):before {
+                display: block;
+                content: "";
+                position: absolute;
+                top: 55px;
+                width: 17%;
+                border-bottom: 3px solid gray;
+            }
             .cl-section div:nth-child(2) {
                 overflow-y: hidden;
             }
@@ -124,6 +252,11 @@
                 height: 100%;
                 width: 100%;
                 color: white;
+            }
+            .more-top-stories .cl-bg .rf-bg {
+                width: 100%;
+                height: 100%;
+                background: white;
             }
             .more-top-stories .cl-bg center {
                 width: 70%;
@@ -151,7 +284,7 @@
                 border-bottom: 3px solid gray;
             }
             .more-top-stories .cl-bg center span:nth-child(3):before {
-                top: 19%;
+                top: 55px;
                 width: 17%;
                 border-bottom: 3px solid white;
             }
@@ -196,9 +329,6 @@
                         <span class="time">
                                             6 h ago 
                                         </span>
-                        <span class="comments pl-1">
-                                            633 comments
-                                        </span>
                     </div>
                 </div>
 
@@ -231,9 +361,6 @@
                     <div class="post-time-and-comment mt-2">
                         <span class="time">
                                                 6 h ago 
-                                            </span>
-                        <span class="comments pl-1">
-                                                633 comments
                                             </span>
                     </div>
                 </div>
@@ -268,9 +395,6 @@
                         <span class="time">
                                                     6 h ago 
                                                 </span>
-                        <span class="comments pl-1">
-                                                    633 comments
-                                                </span>
                     </div>
                 </div>
 
@@ -304,17 +428,16 @@
                         <span class="time">
                                                         6 h ago 
                                                     </span>
-                        <span class="comments pl-1">
-                                                        633 comments
-                                                    </span>
                     </div>
                 </div>
 
             </div>
 
+
         </div>
     </div>
     <!-- end more top stories -->
+    <!-- creative-lab -->
     <div class="d-flex flex-wrap cl-section">
 
         <div class="col-12 col-md-3 more-top-stories pr-md-0 pt-1 pb-1 pt-md-0 pl-md-0">
@@ -322,6 +445,10 @@
                 <center class="d-inline-block float-left mt-md-2">
                     <span class="mr-3">Paid content</span><span>About</span>
                     <span class="d-block">Creative innovation</span></center>
+                <div class="ca-sak-lab">
+                    <div class="title">Sakal Labs</div>
+                    <div class="angular-bracket d-md-none">></div>
+                </div>
             </div>
         </div>
         <div class="d-flex flex-wrap col-12 col-md-9">
@@ -348,9 +475,6 @@
                     <div class="post-time-and-comment mt-2">
                         <span class="time">
                             6 h ago 
-                        </span>
-                        <span class="comments pl-1">
-                            633 comments
                         </span>
                     </div>
                 </div>
@@ -380,9 +504,6 @@
                         <span class="time">
                                 6 h ago 
                             </span>
-                        <span class="comments pl-1">
-                                633 comments
-                            </span>
                     </div>
                 </div>
 
@@ -411,9 +532,6 @@
                         <span class="time">
                                     6 h ago 
                                 </span>
-                        <span class="comments pl-1">
-                                    633 comments
-                                </span>
                     </div>
                 </div>
 
@@ -440,19 +558,244 @@
                     </div>
                     <div class="post-time-and-comment mt-2">
                         <span class="time">
-                                        6 h ago 
-                                    </span>
-                        <span class="comments pl-1">
-                                        633 comments
-                                    </span>
+                                6 h ago 
+                            </span>
                     </div>
                 </div>
 
             </div>
-
         </div>
 
     </div>
+    <!-- end creative lab -->
+    <!-- reader's favourite -->
+    <div class="d-flex flex-wrap cl-section rf-section">
+
+        <div class="col-12 col-md-3 more-top-stories pr-md-0 pt-1 pb-1 pt-md-0 pl-md-0">
+            <div class="cl-bg">
+                <div class="rf-bg">
+                    <center class="d-inline-block float-left mt-md-2">
+                        <span class="ml-1 ml-md-0 mr-1 d-md-block">Reader's</span>
+                        <span class="d-md-block">Favourite</span></center>
+                    <div class="rf-angular-backet d-md-none">></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap col-12 col-md-9">
+            <div class="more-top-stories-articles rf-sub-section d-flex flex-wrap cb-articles col-12 col-md-4 pb-md-4 pl-md-0 pt-0 pb-0">
+                <div class="rf-sub-section-title mr-title mt-md-2 mb-md-2">
+                    <div class="d-md-none plus-sign">+</div>
+                    <div class="rf-title">
+                        Most Read Articles</div>
+                    <div class="d-md-none angle-sign">></div>
+                </div>
+                <div class="rf-section-news-container mr-new-container">
+                    <div class="rf-blocks-article-one mb-2">
+                        <div class="pl-2 pt-md-0 p-md-0 d-none d-md-block">
+                            <div class="top-stories-art-img">
+
+                                <a href="/"><img src="https://www.bard.edu/files/pr/main_news_image.php?id=16647" alt="4dog_26.jpg" title="4dog_26.jpg">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1 mt-2">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                    12000 
+                                       </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rf-blocks-article-others mb-2">
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                             12000 
+                                                </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rf-blocks-article-others mb-2">
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                    12000 
+                                       </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles rf-sub-section d-flex flex-wrap cb-articles col-12 col-md-4 pb-md-4 pl-md-0 pt-0 pb-0">
+                <div class="rf-sub-section-title mc-title mt-md-2 mb-md-2">
+                    <div class="d-md-none plus-sign">+</div>
+                    <div class="rf-title">
+                        Most commented Articles</div>
+                    <div class="d-md-none angle-sign">></div>
+                </div>
+                <div class="rf-section-news-container mc-new-container">
+                    <div class="rf-blocks-article-one mb-2">
+                        <div class="pl-2 pt-md-0 p-md-0 d-none d-md-block">
+                            <div class="top-stories-art-img">
+
+                                <a href="/"><img src="https://www.bard.edu/files/pr/main_news_image.php?id=16647" alt="4dog_26.jpg" title="4dog_26.jpg">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1 mt-2">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                        12000 
+                                           </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rf-blocks-article-others mb-2">
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                                 12000 
+                                                    </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rf-blocks-article-others mb-2">
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                        12000 
+                                           </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="more-top-stories-articles rf-sub-section d-flex flex-wrap cb-articles col-12 col-md-4 pb-md-4 pl-md-0 pt-0 pb-0">
+                <div class="rf-sub-section-title ms-title mt-md-2 mb-md-2">
+                    <div class="d-md-none plus-sign">+</div>
+                    <div class="rf-title">
+                        Most Shared Articles</div>
+                    <div class="d-md-none angle-sign">></div>
+                </div>
+                <div class="rf-section-news-container ms-new-container">
+                    <div class="rf-blocks-article-one mb-2">
+                        <div class="pl-2 pt-md-0 p-md-0 d-none d-md-block">
+                            <div class="top-stories-art-img">
+
+                                <a href="/"><img src="https://www.bard.edu/files/pr/main_news_image.php?id=16647" alt="4dog_26.jpg" title="4dog_26.jpg">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1 mt-2">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                            12000 
+                                               </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rf-blocks-article-others mb-2">
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                                     12000 
+                                                        </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rf-blocks-article-others mb-2">
+                        <div class="article-title-description pr-2 pl-3 ml-0 col-md-12">
+                            <div class="article-title mb-1">
+                                अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी
+                            </div>
+                            <div class="article-description">
+                                अनंतनागमधये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांचा केला खात्मा अनंतनागमध्ये चकमकीत जवानांनी हजिबुलच्या दोन दहशतवाद्यांनी केला खात्माअनंतनागमध्ये चकमकीत जवानांनी अजिवलीच्या दोन दहशतवाद्यांचा
+                            </div>
+                            <div class="post-time-and-comment mt-2 pb-2">
+                                <span class="fa fa-eye pr-1"></span>
+                                <span class="views">
+                                            12000 
+                                               </span>
+                                <spann> views </spann>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end reader's favourite -->
 </body>
 
 </html>
