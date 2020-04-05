@@ -1,0 +1,1320 @@
+* {
+    /* box-shadow: 0 0 0 1px green; */
+}
+
+
+/* ================================= common ================================= */
+
+@font-face {
+    font-family: ekmukta;
+    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf);
+}
+
+* {
+    font-family: ekmukta;
+}
+
+body {
+    cursor: pointer !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.section-full-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-section-width {
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.news-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 30px;
+}
+
+.news-description {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #7b7a7a;
+    overflow: hidden;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-height: 54px;
+}
+
+.section-title-desktop {
+    font-weight: 600;
+    font-size: 22px;
+    color: #004b8c;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-title-desktop::before {
+    padding-top: 5px;
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 2px;
+    width: 40px;
+    border-bottom: 3px solid gray;
+}
+
+.ad-block-top-desktop {
+    display: none;
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ad-block-mobile {
+    display: block;
+    width: 320px;
+    height: 100px;
+    background-color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ============================================================================= */
+
+
+/* --------- start Nitesh ---------- */
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #004B8C;
+    width: fit-content;
+}
+
+.section-title:after {
+    border-bottom: 3px solid #3F3D3D;
+    content: '';
+    display: block;
+    width: 40%;
+}
+
+.news-section-title {
+    font-family: ekmukta;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #004b8c;
+}
+
+.news-section-title:after {
+    border-bottom: 2px solid #3F3D3D;
+    content: '';
+    display: block;
+    width: 75%;
+}
+
+.news-footer {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #7b7a7a;
+}
+
+.global-nav-wrapper {
+    width: 1040px;
+    background-color: #004B8C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.global-nav {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 90%;
+}
+
+.header-logo {
+    background-image: url("https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/Sakal.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-bottom: black solid 0.4px;
+    font-size: 12px;
+}
+
+.category-title {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.news-content-div {
+    border-bottom: #004B8C solid 1px;
+}
+
+.news-content-div:last-child {
+    border-bottom: none;
+}
+
+.left-box {
+    width: 65%
+}
+
+.right-box {
+    width: 35%;
+}
+
+.breaking-news .left-box .left-box-top {
+    height: 350px;
+    background-image: url("https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 80%;
+    border-bottom: #004B8C solid 1px;
+}
+
+.breaking-news .left-box .left-box-top .row .col-lg-7 .news-title {
+    font-size: 16px;
+    max-height: 36px;
+}
+
+.breaking-news .left-box .left-box-top .row .col-lg-7 .news-description {
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+    max-height: 45px;
+}
+
+.breaking-news .left-box .left-box-top .row .col-lg-4 .news-title {
+    font-size: 13px;
+}
+
+.breaking-news .left-box .left-box-top .row .col-lg-4 .news-description {
+    -webkit-line-clamp: 3;
+    font-size: 11px;
+    max-height: 36px;
+}
+
+.breaking-news .left-box .left-box-bottom .row:nth-child(1) .col-lg-8 .news-description {
+    -webkit-line-clamp: 1;
+}
+
+.breaking-news .left-box .left-box-bottom .row:nth-child(2) .col-lg-4 .news-title {
+    font-size: 13px;
+}
+
+.breaking-news .left-box .left-box-bottom .row:nth-child(2) .col-lg-4 .news-description {
+    -webkit-line-clamp: 4;
+    font-size: 11px;
+    max-height: 50px;
+}
+
+.breaking-news .left-box .left-box-bottom .row:nth-child(1) {
+    border-bottom: #004B8C solid 1px;
+}
+
+.breaking-news .left-box .left-box-bottom .row .col-md-12:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    height: 60%;
+    border-right: 1px solid #174b8c;
+}
+
+.breaking-news .right-box .e-paper {
+    background-image: url("https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/e-paper.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-bottom: black solid 0.4px;
+}
+
+.card-img-top {
+    border-radius: unset !important;
+    height: 150px;
+}
+
+.breaking-news-2 .right-box .newsletter {
+    height: 100px;
+}
+
+.breaking-news-2 .right-box .newsletter .newsletter-input {
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: unset !important;
+}
+
+.breaking-news-2 .right-box .newsletter .newsletter-button {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: #004B8C;
+}
+
+.categories .news-description {
+    -webkit-line-clamp: 2;
+    max-height: 28px;
+}
+
+@media (max-width: 820px) {
+    section .col-md-12 {
+        border-bottom: #004B8C solid 1px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .global-nav {
+        display: none !important;
+    }
+    .header {
+        display: none !important;
+    }
+    .mobile-global-nav {
+        width: 100vw;
+        height: 6vh;
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .mobile-logo {
+        background-image: url("https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/Sakal.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 60px;
+        width: 180px;
+    }
+    .mobile-content-nav {
+        display: flex;
+        height: 5vh;
+        width: 100%;
+        background-color: #004B8C;
+    }
+    .mobile-side-nav {
+        width: 65%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform: translateX(-100%);
+        transition: all ease .25s;
+        color: white;
+        background-color: #004B8C;
+        z-index: 5;
+    }
+    .card-img-top {
+        height: 180px;
+    }
+    .mobile-side-nav.open {
+        transform: translateX(0%);
+    }
+    .close {
+        display: block;
+        z-index: -1;
+    }
+    .close-side-nav {
+        display: flex;
+        justify-content: flex-end;
+        height: 5vh;
+    }
+    .side-nav-item {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .side-nav-content {
+        width: 70%;
+        height: 4%;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1 rem;
+        letter-spacing: 0.1em;
+    }
+    .advertisement-1 {
+        height: 100px !important;
+    }
+    .section-title {
+        display: none !important;
+    }
+    .news-title {
+        font-size: 16px !important;
+        font-weight: 600;
+        -webkit-line-clamp: 2;
+        max-height: 36px;
+    }
+    .news-description {
+        font-family: ekmukta;
+        font-size: 12px !important;
+        -webkit-line-clamp: 4 !important;
+        max-height: 54px !important;
+    }
+    .news-section-title {
+        font-family: ekmukta;
+        width: fit-content;
+        font-size: 12px;
+        line-height: 1.1;
+    }
+    .news-footer {
+        display: block !important;
+        font-size: 10px;
+        line-height: 1.2;
+        color: #7b7a7a;
+    }
+    .breaking-news {
+        height: auto;
+        border: unset;
+    }
+    .section-type-1-image {
+        width: 100%;
+        height: 280px;
+        background-image: url("https://epaper.esakal.com/images/SakalLogo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .breaking-news .left-box {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .breaking-news .left-box .left-box-top {
+        background: none;
+        display: flex !important;
+        align-items: start !important;
+        height: unset !important;
+        border-bottom: unset;
+    }
+    .breaking-news .left-box .left-box-top .row {
+        height: 100% !important;
+        border: unset;
+    }
+    .breaking-news .left-box .left-box-bottom {
+        height: 100% !important;
+    }
+    .breaking-news .left-box .left-box-bottom .row:nth-child(1) {
+        border-bottom: unset;
+    }
+    .breaking-news .left-box .left-box-bottom .row .col-md-12:nth-child(1):before {
+        border-right: unset;
+    }
+    .breaking-news-2 .left-box {
+        width: 100% !important;
+    }
+    .categories.inner-section-width {
+        width: 100% !important;
+    }
+    .categories .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .categories .news-description {
+        display: none;
+    }
+    /* .categories .news-title{
+        -webkit-line-clamp: 3;
+        max-height: 54px;
+    } */
+}
+
+
+/* --------- end Nitesh ---------- */
+
+
+/* ========================================================================== */
+
+
+/* --------- start Sanket ---------- */
+
+
+/* ================================= main =================================  */
+
+.main-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.section-title-mobile {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 1rem;
+    background-color: #004b8c;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.section-title-mobile i {
+    font-size: 20px;
+}
+
+.section-title-desktop {
+    display: none;
+}
+
+
+/* ================================= video-story ================================= */
+
+.video-story {
+    background-color: #004b8c;
+}
+
+.video-box {
+    flex-direction: column;
+}
+
+.video-main-desktop {
+    width: 111.5%;
+    right: 6%;
+    /* width: 125.5%;
+    right: 13%; */
+    height: 250px;
+    position: relative;
+}
+
+.video-item-card {
+    border-bottom: 1px solid white;
+}
+
+.other-v-story-container .video-item-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.v-image {
+    display: inline-block;
+    width: 50%;
+    height: 85px;
+}
+
+
+/* .main-video{
+    z-index: 2;
+    position: relative;
+} */
+
+.video-item-info {
+    width: 50%;
+    color: white;
+}
+
+.video-item-info .v-time {
+    color: white;
+}
+
+.video-item-info .v-views {
+    color: white;
+}
+
+.main-video.video-item-info {
+    width: 65%;
+}
+
+.main-video .news-title {
+    font-size: 16px;
+}
+
+.main-video .news-description {
+    font-size: 13px;
+}
+
+.video-story .news-title {
+    color: white;
+}
+
+.video-story .news-description {
+    -webkit-line-clamp: 3;
+    color: white;
+}
+
+.v-time {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #7b7a7a;
+    display: block;
+}
+
+.v-views {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #7b7a7a;
+    display: inline-block;
+}
+
+.social-icons {
+    display: none;
+}
+
+.video-overlay {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    background-color: #00000060;
+    bottom: 100%;
+}
+
+.upnext {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+.play-icon {
+    width: 15%;
+}
+
+.play-icon-white {
+    width: 15%;
+}
+
+
+/* ================================= entertainment ================================= */
+
+.entertainment-container {
+    display: block;
+}
+
+#entertainment-carousel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    /* width: 100%; */
+}
+
+.carousel-image {
+    height: 250px;
+}
+
+.entertainment-list-box {
+    margin: 0%;
+    width: 100%;
+    background-color: white;
+}
+
+.entertainment-list {
+    margin: 3px 0px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 2px 0px;
+    border-bottom: 1px solid gainsboro;
+    font-size: 0.7em;
+}
+
+.entertainment-list:last-child {
+    border-bottom: none;
+}
+
+ul.list-unstyled {
+    margin: 10px 0px;
+}
+
+.ad-block-desktop {
+    display: none;
+}
+
+.entertainment .news-description span {
+    display: inline-block;
+    margin: 2px 10px 2px 0px;
+}
+
+.ad-block {
+    background-color: gray;
+    height: 250px;
+    width: 100%;
+    max-width: 320px;
+}
+
+
+/* ================================= footer-top ================================= */
+
+.footer-top {
+    background-color: #e3e3e3;
+}
+
+.footer-menu ul {
+    font-size: 12px;
+    color: #5d5d60;
+    list-style-type: none;
+}
+
+.footer-top li {
+    margin: 0.5rem 0.2rem;
+}
+
+.footer-top li span {
+    margin: 0px 0.5rem;
+}
+
+
+/* ================================= footer-bottom =================================  */
+
+.footer-bottom {
+    background-color: #e3e3e3;
+}
+
+.footer-links-div {
+    width: 100%;
+}
+
+.footer-links-div ul li {
+    color: #5d5d60;
+    font-size: 12px;
+}
+
+.footer-links-div ul li::before {
+    display: inline-block;
+    content: '';
+    height: 0.25rem;
+    width: 0.25rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.1rem;
+    background-color: #5d5d60;
+}
+
+
+/* ================================= footer copyright ================================= */
+
+.copyright {
+    background-color: #06243E;
+}
+
+.sakal-logo-bottom-footer {
+    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/sakal_tab_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 80px;
+}
+
+.copyright-text.news-description {
+    color: white;
+}
+
+.social-icon {
+    border: 2px solid white;
+    width: 35px;
+    height: 35px;
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-top-box {
+    width: 150px;
+    display: inline-block;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fa-social-custom {
+    padding: 2px;
+    font-size: 15px;
+    color: white;
+}
+
+.sakal-logo-footer-box .grey-line {
+    width: 75%;
+    border-top: 1px solid grey;
+}
+
+.grey-line {
+    width: 60%;
+    border-top: 1px solid grey;
+}
+
+.entertainment .section-title-mobile {
+    background-color: #e15e07;
+}
+
+@media (min-width: 768px) {
+    /* ================================= video-story ================================= */
+    .section-title-desktop {
+        display: inline-block;
+    }
+    .video-story .section-title-desktop {
+        color: white;
+    }
+    .video-story .section-title-desktop::before {
+        border-bottom: 3px solid white;
+    }
+    .video-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .video-main-mobile {
+        display: none;
+    }
+    .video-main-desktop {
+        height: 315px;
+        width: 100%;
+        position: unset;
+        right: 0px;
+    }
+    .ad-block-mobile {
+        display: none;
+    }
+    .ad-block-top-desktop {
+        display: block;
+    }
+    .main-v-story-container {
+        width: 70%;
+    }
+    .v-image {
+        width: 35%;
+        height: 115px;
+    }
+    .v-time {
+        font-size: 12px;
+    }
+    .v-views {
+        font-size: 12px;
+    }
+    .video-item-info {
+        width: 65%;
+    }
+    .other-v-story-container {
+        width: 25%;
+        align-items: center;
+        align-self: flex-start;
+    }
+    .main-v-story-container .video-item-card {
+        width: 90%;
+        border-bottom: none
+    }
+    .other-v-story-container .video-item-card {
+        flex-direction: column;
+        border-bottom: none;
+        width: 100%;
+    }
+    .other-v-story-container .video-item-card .v-image {
+        display: block;
+        width: 100%;
+        height: 150px;
+    }
+    .other-v-story-container .video-item-card .video-item-info {
+        width: 100%;
+        display: block;
+        color: white;
+    }
+    .other-v-story-container .v-views {
+        display: none;
+    }
+    .s-icon {
+        color: white;
+        height: 20px;
+        width: 20px;
+    }
+    .social-icons {
+        display: block;
+    }
+    .main-video.video-item-info {
+        width: 51%;
+    }
+    .main-video .news-title {
+        font-size: 18px;
+        max-height: 40px;
+    }
+    .main-video .news-description {
+        font-size: 15px;
+    }
+    /* ================================= entertainment ================================= */
+    .entertainment .section-title-desktop {
+        right: 6px;
+    }
+    .horizontal-box {
+        display: flex;
+    }
+    .entertainment-container {
+        display: flex;
+    }
+    #entertainment-carousel {
+        margin: 0px;
+        display: inline-block;
+        height: 250px;
+        width: 65%;
+    }
+    .entertainment-list-box {
+        background-color: #ff571c;
+        height: 250px;
+        width: 35%;
+    }
+    .entertainment-list {
+        height: 62.5px;
+        margin: 0px;
+        background-color: #ff571c;
+        color: white;
+        padding: 2px 10px;
+        border-bottom: 1px dashed white;
+    }
+    .entertainment-list .news-title {
+        -webkit-line-clamp: 2;
+        color: white;
+    }
+    .carousel-image {
+        height: 250px;
+        width: 100%;
+    }
+    .v-story-indicators {
+        z-index: 15;
+        bottom: 0px;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0px;
+        justify-content: space-around;
+    }
+    .v-story-indicators li {
+        opacity: 0;
+    }
+    ol.v-story-indicators li.triangle.active {
+        opacity: 1;
+        background-color: #00000000;
+    }
+    ol.v-story-indicators li.triangle {
+        margin: 0px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 15px solid #ff571c;
+        border-bottom: 10px solid transparent;
+    }
+    ul.list-unstyled {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .ad-block-desktop {
+        display: block;
+        margin: 0px;
+    }
+    .entertainment .news-description {
+        display: none;
+    }
+    .entertainment .news-description span {
+        display: none;
+    }
+    /* ================================= footer-top ================================= */
+    .footer-menu ul {
+        font-size: 14px;
+    }
+    .footer-top li {
+        margin: 0.5rem 1rem;
+    }
+    /* ================================= footer-bottom ================================= */
+    .footer-bottom {
+        background-color: white;
+    }
+    .footer-logo-div {
+        background-image: url(https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/Sakal.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150%;
+        width: 150px;
+        height: 80px;
+    }
+    .footer-breadcrumbs-container {
+        width: 95%;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+    .grey-line {
+        display: none;
+    }
+    .footer-links-div {
+        width: 75%;
+    }
+    .footer-links-div ul li {
+        font-size: 18px;
+    }
+    .footer-links-div ul li::before {
+        -webkit-border-radius: 0.5rem;
+        border-radius: 0.5rem;
+        height: 0.5rem;
+        width: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    /* ====================== from 786 to 820 =================== */
+    /* .breaking-news .right-box{
+        display: none !important;
+    } */
+    .categories.inner-section-width {
+        width: 90% !important;
+    }
+    .categories .news-title {
+        -webkit-line-clamp: 1;
+        max-height: 14px;
+    }
+}
+
+
+/* ================================== media queries to adjust container size ========================= */
+
+@media (max-width: 1040px) {
+    .global-nav-wrapper {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1040px) {
+    .main-container {
+        width: 970px;
+    }
+    .global-nav-wrapper {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-container {
+        width: 1040px;
+    }
+    .global-nav-wrapper {
+        width: 1040px;
+    }
+}
+
+
+/* --------- end Sanket ---------- */
+
+
+/* css for top stories , creative labs, reader's fav */
+
+.top-stories-art-img img {
+    height: auto;
+    width: 100%;
+}
+
+.article-title-description .article-location {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #004b8c;
+    border-bottom: 1px solid #3F3D3D;
+}
+
+.rf-section .article-title-description .article-title {
+    font-size: 13px;
+    -webkit-line-clamp: 1;
+    max-height: 13px
+}
+
+.rf-section .article-title-description .article-description {
+    font-size: 12px;
+    -webkit-line-clamp: 2;
+    color: #353434;
+    max-height: 26px;
+    font-weight: bold;
+}
+
+.rf-section .article-title-description .post-time-and-comment {
+    font-size: 9px;
+}
+
+.article-title-description .article-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-height: 36px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.article-title-description .article-description,
+.post-time-and-comment {
+    font-size: 13px;
+    line-height: 1.2;
+    max-height: 60px;
+    color: #7b7a7a;
+    overflow: hidden;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.more-top-stories center span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.more-top-stories center {
+    display: inline;
+    margin-left: 10px;
+    color: white
+}
+
+.more-top-stories {
+    background: #164B8C;
+}
+
+.more-top-stories .cl-bg span {
+    color: white;
+}
+
+.more-top-stories .cl-bg center span:nth-child(1) {
+    font-size: 12px;
+    margin-left: -14.9%;
+}
+
+.more-top-stories .cl-bg center span:nth-child(2) {
+    font-size: 12px;
+}
+
+.more-top-stories .cl-bg center span:nth-child(2):before,
+.more-top-stories .cl-bg center span:nth-child(1):before {
+    display: none;
+}
+
+.rf-sub-section .article-title {
+    color: #004b8c;
+}
+
+.rf-sub-section .article-title:before {
+    content: "";
+    position: absolute;
+    color: black;
+    left: 4px;
+}
+
+.rf-sub-section .rf-blocks-article-one .article-title:before {
+    content: "1.";
+}
+
+.rf-sub-section .rf-blocks-article-others:nth-child(2) .article-title:before {
+    content: "2.";
+}
+
+.rf-sub-section .rf-blocks-article-others:nth-child(3) .article-title:before {
+    content: "3.";
+}
+
+.rf-sub-section-title {
+    color: #333131;
+}
+
+.rf-section-news-container .article-title-description:after {
+    content: "";
+    position: absolute;
+    width: 92%;
+    bottom: 3px;
+    border-bottom: 1px solid #b3afaf;
+}
+
+.ca-sak-lab,
+.rf-angular-backet {
+    display: flex;
+    width: 78px;
+    font-size: 15px;
+    position: absolute;
+    font-weight: bold;
+    bottom: 10px;
+    right: 3px;
+    color: white;
+}
+
+.rf-angular-backet {
+    ont-size: 16px;
+    width: 10px;
+    right: 23px;
+    font-weight: 600;
+    top: 4px;
+}
+
+@media(max-width:768px) {
+    .rf-sub-section-title .rf-title {
+        margin-left: 14%;
+    }
+    .rf-sub-section-title .plus-sign {
+        position: absolute;
+        left: 10px;
+    }
+    .rf-sub-section-title .angle-sign {
+        position: absolute;
+        right: 10px;
+    }
+    .rf-sub-section-title {
+        background: #D2D2D2;
+    }
+    .more-top-stories-articles {
+        padding: 16px 0px;
+        border-bottom: 1px solid gainsboro;
+    }
+    .rf-sub-section-title {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+    }
+    .rf-section-news-container {
+        background: #F3F3F3;
+    }
+    .more-top-stories .rf-bg center span:nth-child(1),
+    .more-top-stories .rf-bg center span:nth-child(2) {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 768px) {
+    .rf-section-news-container .article-title-description:after {
+        width: 90%;
+        bottom: 3px;
+    }
+    .rf-sub-section-title {
+        margin: 0 auto;
+        color: #777777;
+    }
+    .more-top-stories .cl-bg .rf-bg center span:nth-child(2),
+    .more-top-stories .cl-bg .rf-bg center span:nth-child(1) {
+        font-size: 16px;
+        margin-left: 0px;
+        text-align: left;
+    }
+    .more-top-stories .cl-bg .rf-bg span {
+        color: #164B8C;
+    }
+    .more-top-stories .cl-bg .rf-bg center span:nth-child(2):before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 55px;
+        width: 17%;
+        border-bottom: 3px solid gray;
+    }
+    .cl-section div:nth-child(2) {
+        overflow-y: hidden;
+    }
+    .cl-section .article-title-description {
+        border-bottom: unset;
+    }
+    .more-top-stories .cl-bg {
+        background: #164B8C;
+        height: 100%;
+        width: 100%;
+        color: white;
+    }
+    .more-top-stories .cl-bg .rf-bg {
+        width: 100%;
+        height: 100%;
+        background: white;
+    }
+    .more-top-stories .cl-bg center {
+        width: 70%;
+        padding-left: 12%;
+    }
+    .article-title-description .article-title {
+        color: #004b8c;
+    }
+    .article-title-description {
+        border-bottom: 1px solid #2E5F8A;
+    }
+    .more-top-stories center span {
+        font-weight: 600;
+        font-size: 16px;
+        color: #004b8c;
+    }
+    .more-top-stories {
+        background: white;
+    }
+    .more-top-stories center span:before {
+        content: "";
+        position: absolute;
+        top: 22px;
+        width: 24%;
+        border-bottom: 3px solid gray;
+    }
+    .more-top-stories .cl-bg center span:nth-child(3):before {
+        top: 55px;
+        width: 17%;
+        border-bottom: 3px solid white;
+    }
+}
+
+
+/* end css for top stories , creative labs, reader's fav */
+
+
+/* changes made at the end */
+
+@media(min-width:768px) {
+    .rf-sub-section .article-title:before {
+        left: 0px;
+    }
+    .breaking-news-2 {
+        border-bottom: 1px solid #2E5F8A;
+    }
+    .cl-right-section:before {
+        content: "";
+        border-bottom: 1px solid #2E5F8A;
+        position: absolute;
+        width: 95%;
+        bottom: 8px;
+    }
+}
