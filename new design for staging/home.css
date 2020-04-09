@@ -32,6 +32,7 @@ body {
 }
 
 .header-nav .nav-link {
+    font-weight: 600;
     color: #004b8c;
 }
 
@@ -125,7 +126,7 @@ body {
 .transparent-hamburger {
     position: fixed;
     width: 100vw;
-    top: 6vh;
+    top: 8vh;
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
@@ -148,7 +149,7 @@ body {
 .transparent-hamburger.open {
     width: 100%;
     transform: translateX(0%);
-    height: 94vh;
+    height: 92vh;
 }
 
 .close-side-nav {
@@ -233,19 +234,23 @@ body {
 }
 
 .global-nav-wrapper {
+    font-size: 14px;
+    font-weight: 600;
     width: 1040px;
     background-color: #004B8C;
     color: white;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
 }
 
 .global-nav {
     width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+.ten{
+    width: 10%;
 }
 
 .main-wrapper {
@@ -438,7 +443,9 @@ body {
     }
     .mobile-content-nav {
         width: 100%;
+        height: 6.5vh;
         background-color: #004B8C;
+        box-shadow: inset 0px 1px 3px 0px blue;
     }
     .mobile-side-nav {
         width: 70vw;
@@ -912,7 +919,7 @@ ul.list-unstyled {
         width: 14vw;
     }
     .main-container.open-hamburger {
-        transform: translateX(20vw);
+        transform: translateX(15vw);
     }
     /* ================================= video-story ================================= */
     .section-title-desktop {
@@ -1333,13 +1340,7 @@ ul.list-unstyled {
         margin-top: -9px;
     }
     .mobile-content-nav .menu.nav.navbar-nav .links {
-        overflow: auto;
-        white-space: nowrap;
-        padding-left: 5px;
-        margin-bottom: 0;
-        color: white;
-    }
-    .mobile-content-nav .menu.nav.navbar-nav .links {
+        text-shadow: 0.5px 0.5px ;
         overflow: auto;
         white-space: nowrap;
         padding-left: 5px;
@@ -1353,8 +1354,9 @@ ul.list-unstyled {
     }
     .mobile-content-nav ul.links li:after {
         content: "";
-        height: 22px;
-        right: 0px;
+        height: 15px;
+        top: 12px;
+        right: -2px;
         position: absolute;
         border-right: 1px solid white;
     }
@@ -1401,6 +1403,12 @@ ul.list-unstyled {
 }
 
 @media(min-width: 768px) {
+    .transparent-hamburger {
+        top: 6vh;
+    }
+    .transparent-hamburger.open {
+        height: 94vh;
+    }
     .mts-section {
         position: relative;
     }
