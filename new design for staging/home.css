@@ -249,7 +249,8 @@ body {
     display: flex;
     align-items: center;
 }
-.ten{
+
+.ten {
     width: 10%;
 }
 
@@ -420,6 +421,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .breaking-news-2 .left-box div:nth-child(2) {
+        border-bottom: unset;
+    }
     .row1-block1 .news-title {
         font-size: 17px !important;
         color: #4a4545;
@@ -456,7 +460,7 @@ body {
         width: 100%;
         height: 6.5vh;
         background-color: #004B8C;
-        box-shadow: inset 0px 1px 3px 0px blue;
+        box-shadow: inset 0px 2px 6px;
     }
     .mobile-side-nav {
         width: 70vw;
@@ -467,20 +471,20 @@ body {
     .card-img-top {
         height: 180px;
     }
-    .mobile-overlap{
+    .mobile-overlap {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         height: 191px;
         width: 100%;
         position: absolute;
-        bottom: 36%;
-        background-color: #00000075;
+        bottom: 27%;
+        background-color: #04040430;
     }
-    .breaking-news-2 .mobile-overlap .news-section-title{
+    .breaking-news-2 .mobile-overlap .news-section-title {
         color: rgb(101, 173, 255);
     }
-    .breaking-news-2 .mobile-overlap .news-title{
+    .breaking-news-2 .mobile-overlap .news-title {
         font-weight: 600;
         color: white;
     }
@@ -506,6 +510,10 @@ body {
     }
     .row1-block1 .news-description {
         color: #2D2D2D;
+    }
+    .breaking-news-2 .news-description {
+        -webkit-line-clamp: 2 !important;
+        max-height: 36px !important;
     }
     .news-description {
         font-family: ekmukta;
@@ -1398,7 +1406,7 @@ ul.list-unstyled {
         margin-top: -9px;
     }
     .mobile-content-nav .menu.nav.navbar-nav .links {
-        text-shadow: 0.5px 0.5px ;
+        text-shadow: 0.5px 0.5px;
         overflow: auto;
         white-space: nowrap;
         padding-left: 5px;
