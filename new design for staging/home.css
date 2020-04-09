@@ -467,6 +467,23 @@ body {
     .card-img-top {
         height: 180px;
     }
+    .mobile-overlap{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 191px;
+        width: 100%;
+        position: absolute;
+        bottom: 36%;
+        background-color: #00000075;
+    }
+    .breaking-news-2 .mobile-overlap .news-section-title{
+        color: rgb(101, 173, 255);
+    }
+    .breaking-news-2 .mobile-overlap .news-title{
+        font-weight: 600;
+        color: white;
+    }
     .close {
         display: block;
         z-index: -1;
