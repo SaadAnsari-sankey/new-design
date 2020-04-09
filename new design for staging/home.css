@@ -51,7 +51,7 @@ body {
 }
 
 .inner-section-width {
-    width: 80% !important;
+    width: 94% !important;
     display: flex;
     justify-content: center;
 }
@@ -216,11 +216,11 @@ body {
     font-size: 12px;
     font-weight: bold;
     line-height: 1.1;
-    color: #004b8c;
+    color: #174776;
 }
 
 .news-section-title:after {
-    border-bottom: 2px solid #3F3D3D;
+    /* border-bottom: 2px solid #3F3D3D; */
     content: '';
     display: block;
     width: 75%;
@@ -294,7 +294,7 @@ body {
 
 .breaking-news .left-box .left-box-top {
     height: 400px;
-    background-image: url(https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/narendra_modi_ban1351_02032019_660_240320065153.jpg);
+    background-image: url(https://lh4.googleusercontent.com/proxy/XPBCY_PH_YeH1erNtUOPuRfAdGgrZyLox7BxPPsraczdaFMdTXts_f_T-X100BUvKtyceQimcxMM-MtbX9SEXghUMBcKRZQ41N_cZulmFcrmfxE6tssQODu2xg4t);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 74%;
@@ -390,16 +390,23 @@ body {
 }
 
 .breaking-news-2 .right-box .newsletter .newsletter-input {
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 600;
-    border-radius: unset !important;
+    background: #fbfbfb;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #d0c9c9;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .breaking-news-2 .right-box .newsletter .newsletter-button {
     font-size: 12px;
     font-weight: 600;
+    border-top-left-radius: 0px;
     color: white;
-    background-color: #004B8C;
+    border-bottom-left-radius: 0px;
+    background-color: #44A7FB;
 }
 
 .categories .news-description {
@@ -408,6 +415,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .row1-block1 .news-title {
+        font-size: 17px !important;
+        color: #4a4545;
+    }
     section.breaking-news .col-sm-12 {
         border-bottom: gainsboro solid 1px;
     }
@@ -459,11 +470,18 @@ body {
     .section-title {
         display: none !important;
     }
+    .breaking-news-2 .news-title {
+        font-weight: normal;
+        color: #5f5d5d;
+    }
     .news-title {
         font-size: 16px !important;
         font-weight: 600;
         -webkit-line-clamp: 2;
         max-height: 46px;
+    }
+    .row1-block1 .news-description {
+        color: #2D2D2D;
     }
     .news-description {
         font-family: ekmukta;
@@ -474,7 +492,7 @@ body {
     .news-section-title {
         font-family: ekmukta;
         width: fit-content;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1.1;
     }
     .news-footer {
@@ -493,8 +511,8 @@ body {
     }
     .section-type-1-image {
         width: 100%;
-        height: 280px;
-        background-image: url("https://epaper.esakal.com/images/SakalLogo.png");
+        height: 226px;
+        background-image: url("https://pbs.twimg.com/media/CO3EZteUkAE5eeZ.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -881,6 +899,30 @@ ul.list-unstyled {
 }
 
 @media (min-width: 768px) {
+    .breaking-news-2 .news-title {
+        color: #215487;
+    }
+    .right-border-zero:before {
+        content: '';
+        display: inline-block;
+        height: 103px;
+        width: 1px;
+        background-color: #B5B5B5;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: absolute;
+        right: 0px;
+        top: 21px;
+    }
+    .breaking-news-2 .left-box .card-img-top {
+        height: 170px;
+    }
+    .left-box {
+        margin-right: 18px !important;
+    }
+    .inner-section-width {
+        width: 80% !important;
+    }
     .breaking-news {
         border-bottom: 1px solid #B5B5B5;
     }
@@ -1129,7 +1171,6 @@ ul.list-unstyled {
     /* .breaking-news .right-box{
  *         display: none !important;
  *             } */
-    
     .categories .news-title {
         -webkit-line-clamp: 1;
         max-height: 16px;
