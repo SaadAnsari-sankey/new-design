@@ -473,6 +473,10 @@ body {
     }
     .card-img-top {
         height: 180px;
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3px;
     }
     .mobile-overlap {
         display: flex;
@@ -632,7 +636,7 @@ body {
 .inner-container {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 94%;
 }
 .mobile-inner-container{
     margin-left: auto;
@@ -785,6 +789,9 @@ body {
 }
 
 /* ================================= entertainment ================================= */
+.entertainment .news-title {
+    color: #05243f;
+}
 
 .entertainment-container {
     display: block;
@@ -840,6 +847,19 @@ ul.list-unstyled {
     height: 250px;
     width: 100%;
     max-width: 320px;
+}
+ol.v-story-indicators li.triangle.active {
+    opacity: 1;
+    background-color: pink;
+}
+ol.v-story-indicators li.triangle {
+    margin: 0px 5px;
+    display: block;
+    width: 10px;
+    max-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #004b8c;
 }
 
 
@@ -1114,9 +1134,6 @@ ul.list-unstyled {
         font-size: 15px;
     }
     /* ================================= entertainment ================================= */
-    .entertainment .section-title-desktop {
-        right: 6px;
-    }
     .horizontal-box {
         display: flex;
     }
@@ -1171,6 +1188,8 @@ ul.list-unstyled {
         display: block;
         width: 0;
         height: 0;
+        max-width: 0;
+        border-radius: 0px;
         border-top: 10px solid transparent;
         border-right: 15px solid #ff571c;
         border-bottom: 10px solid transparent;
@@ -1507,6 +1526,9 @@ ul.list-unstyled {
     .mobile-inner-container{
         width: 100%;
         margin: 0px;
+    }
+    .inner-container {
+        width: 80%;
     }
     .transparent-hamburger {
         top: 6vh;
