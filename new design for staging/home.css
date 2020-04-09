@@ -416,8 +416,11 @@ body {
 }
 
 .categories .news-description {
+    font-size: 12px;
     -webkit-line-clamp: 2;
-    max-height: 33px;
+    max-height: 29px;
+    color: #353434;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -631,6 +634,11 @@ body {
     margin-right: auto;
     width: 80%;
 }
+.mobile-inner-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+}
 
 .section-title-mobile {
     font-weight: 600;
@@ -772,6 +780,9 @@ body {
     width: 15%;
 }
 
+.categories .news-title {
+    color: #05243f;
+}
 
 /* ================================= entertainment ================================= */
 
@@ -1229,7 +1240,8 @@ ul.list-unstyled {
     .categories .news-title {
         -webkit-line-clamp: 1;
         max-height: 16px;
-        font-size: 14px
+        font-size: 14px;
+        color: #004b8c;
     }
 }
 
@@ -1492,6 +1504,10 @@ ul.list-unstyled {
 }
 
 @media(min-width: 768px) {
+    .mobile-inner-container{
+        width: 100%;
+        margin: 0px;
+    }
     .transparent-hamburger {
         top: 6vh;
     }
