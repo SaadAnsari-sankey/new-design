@@ -961,7 +961,7 @@ ol.v-story-indicators li.triangle {
 
 .grey-line {
     width: 60%;
-    border-top: 1px solid gainsboro;
+    border-top: 1px solid grey;
 }
 
 .entertainment .section-title-mobile {
@@ -1227,8 +1227,8 @@ ol.v-story-indicators li.triangle {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 150%;
-        width: 150px;
-        height: 80px;
+        width: 200px;
+        height: 100px;
     }
     .footer-breadcrumbs-container {
         width: 95%;
@@ -1243,7 +1243,7 @@ ol.v-story-indicators li.triangle {
         width: 75%;
     }
     .footer-links-div ul li {
-        font-size: 18px !important;
+        font-size: 23px !important;
     }
     .footer-links-div ul li::before {
         -webkit-border-radius: 0.5rem;
