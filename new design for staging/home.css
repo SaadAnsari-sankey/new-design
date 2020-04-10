@@ -363,10 +363,11 @@ body {
 }
 
 .breaking-news .right-box .video-title:before {
-    border-top: 2px solid #174b8c;
+    border-top: 3px solid black;
     content: '';
     display: block;
-    width: 70%;
+    margin-bottom: 4px;
+    width: 67%;
 }
 
 .breaking-news .right-box .e-paper {
@@ -1578,6 +1579,9 @@ ol.v-story-indicators li.triangle {
 }
 
 @media(min-width: 768px) {
+    .mts-section .mts-articles .more-top-stories-articles:nth-child(4) {
+        padding-bottom: 3px !important;
+    }
     .mobile-inner-container {
         width: 100%;
         margin: 0px;
@@ -1650,7 +1654,9 @@ ol.v-story-indicators li.triangle {
         max-height: 50px;
     }
     .mts-section .top-stories-art-img img {
-        min-height: 165px;
+        min-height: 151px;
+        width: 98%;
+        max-height: 151px;
     }
     .ca-sak-lab {
         font-size: 16px;
@@ -1669,7 +1675,7 @@ ol.v-story-indicators li.triangle {
     }
     .more-top-stories .cl-bg .rf-bg center span:nth-child(2),
     .more-top-stories .cl-bg .rf-bg center span:nth-child(1) {
-        font-size: 16px;
+        font-size: 17px;
         margin-left: 0px;
         text-align: left;
     }
