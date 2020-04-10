@@ -1311,7 +1311,7 @@ ul.list-unstyled {
 
 .more-top-stories center {
     display: inline;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     color: white
 }
 
@@ -1325,11 +1325,12 @@ ul.list-unstyled {
 
 .more-top-stories .cl-bg center span:nth-child(1) {
     font-size: 12px;
-    margin-left: -14.9%;
+    float: left;
 }
 
 .more-top-stories .cl-bg center span:nth-child(2) {
     font-size: 12px;
+    float: left;
 }
 
 .more-top-stories .cl-bg center span:nth-child(2):before,
@@ -1389,17 +1390,48 @@ ul.list-unstyled {
 .rf-angular-backet {
     font-size: 22px;
     width: 10px;
-    right: 21px;
+    right: 7%;
     font-weight: 600;
     top: 8px;
 }
 
 @media(max-width:768px) {
+    .rf-section .rf-section-right {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cl-section .cl-title-section,
+    .rf-section .more-top-stories {
+        position: relative;
+    }
+    .more-top-stories .cl-bg span {
+        float: left;
+    }
+    .ca-sak-lab {
+        font-size: 12px;
+        top: 19px;
+        right: 17px;
+    }
+    .cl-section .cl-right-section {
+        width: 94%;
+        margin: 0 auto;
+    }
+    .more-top-stories center span {
+        font-weight: 600;
+        font-size: 19px;
+    }
+    .mts-section .more-top-stories center,
+    .cl-section .cl-bg center {
+        margin-left: 6%;
+    }
+    .cl-section .cl-bg center {
+        width: 159px;
+    }
     .top-stories-art-img img {
-        min-height: 100px;
+        min-height: 110px;
     }
     .rf-section .more-top-stories center {
-        margin-left: 3px;
+        /* margin-left: 3px; */
     }
     .ca-sak-lab .angular-bracket {
         font-size: 25px;
@@ -1445,8 +1477,12 @@ ul.list-unstyled {
         background: #D2D2D2;
         position: relative;
     }
+    .mts-section .mts-articles {
+        width: 94%;
+        margin: 0 auto;
+    }
     .more-top-stories-articles {
-        padding: 16px 0px;
+        padding: 8px 0px;
         border-bottom: 1px solid gainsboro;
     }
     .rf-sub-section-title {
@@ -1460,7 +1496,7 @@ ul.list-unstyled {
     }
     .more-top-stories .rf-bg center span:nth-child(1),
     .more-top-stories .rf-bg center span:nth-child(2) {
-        font-size: 16px;
+        font-size: 19px;
     }
     .rf-section .more-top-stories-articles {
         border-bottom: unset;
@@ -1469,6 +1505,39 @@ ul.list-unstyled {
 }
 
 @media(min-width: 768px) {
+    .rf-section .rf-section-right .article-title-description .article-title {
+        font-size: 13px;
+        -webkit-line-clamp: 1;
+        max-height: 15px;
+    }
+    .rf-section .more-top-stories {
+        width: 179px;
+    }
+    .rf-section .more-top-stories .cl-bg center {
+        width: 37%;
+    }
+    .rf-section .rf-section-right {
+        width: calc(100% - 179px);
+    }
+    .cl-section .article-title-description .article-title {
+        font-size: 13px;
+        -webkit-line-clamp: 3;
+        max-height: 54px;
+    }
+    .ctl-right-bar-dsk {
+        width: 10%;
+        background: #174b8c;
+    }
+    .cl-section {
+        width: 80%;
+    }
+    .cl-section .cl-right-section {
+        width: calc(100% - 179px);
+        position: relative;
+    }
+    .cl-section .cl-title-section {
+        width: 179px;
+    }
     .transparent-hamburger {
         top: 6vh;
     }
@@ -1477,14 +1546,21 @@ ul.list-unstyled {
     }
     .mts-section {
         position: relative;
+        width: 80%;
+    }
+    .mts-section .more-top-stories-right-container {
+        width: 125px;
+    }
+    .mts-section .mts-articles {
+        width: calc(100% - 125px);
     }
     .mts-section:after {
         content: "";
         position: absolute;
-        width: 91%;
+        width: 100%;
         border-bottom: 1px solid #B5B5B5;
         bottom: 10px;
-        left: 8%;
+        left: 0px;
     }
     .mts-articles div:nth-child(4) .article-title-description {
         border-bottom: unset;
@@ -1497,10 +1573,11 @@ ul.list-unstyled {
         min-height: 165px;
     }
     .ca-sak-lab {
-        font-size: 15px;
-        bottom: 17px;
-        right: 17px;
+        font-size: 16px;
+        bottom: 1px;
+        right: 8px;
         top: unset;
+        font-weight: normal;
     }
     .rf-section-news-container .article-title-description:after {
         width: 90%;
@@ -1508,7 +1585,7 @@ ul.list-unstyled {
     }
     .rf-sub-section-title {
         margin: 0 auto;
-        color: #777777;
+        color: #444242;
     }
     .more-top-stories .cl-bg .rf-bg center span:nth-child(2),
     .more-top-stories .cl-bg .rf-bg center span:nth-child(1) {
@@ -1527,6 +1604,11 @@ ul.list-unstyled {
         width: 17%;
         border-bottom: 3px solid gray;
     }
+    .cl-section .article-title {
+        font-size: 13px;
+        -webkit-line-clamp: 3;
+        max-height: 53px;
+    }
     .cl-section div:nth-child(2) {
         overflow-y: hidden;
     }
@@ -1538,6 +1620,7 @@ ul.list-unstyled {
         height: 100%;
         width: 100%;
         color: white;
+        position: relative;
     }
     .more-top-stories .cl-bg .rf-bg {
         width: 100%;
@@ -1545,8 +1628,7 @@ ul.list-unstyled {
         background: white;
     }
     .more-top-stories .cl-bg center {
-        width: 70%;
-        padding-left: 12%;
+        width: 78%;
     }
     .article-title-description .article-title {
         color: #004b8c;
@@ -1563,7 +1645,7 @@ ul.list-unstyled {
     }
     .more-top-stories center span {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 17px;
         color: #004b8c;
     }
     .more-top-stories {
@@ -1573,12 +1655,13 @@ ul.list-unstyled {
         content: "";
         position: absolute;
         top: 22px;
-        width: 24%;
+        width: 39px;
         border-bottom: 3px solid gray;
     }
     .more-top-stories .cl-bg center span:nth-child(3):before {
-        top: 55px;
-        width: 17%;
+        top: 59px;
+        width: 45px;
+        left: 3px;
         border-bottom: 3px solid white;
     }
 }
@@ -1600,7 +1683,8 @@ ul.list-unstyled {
         content: "";
         border-bottom: 1px solid #B5B5B5;
         position: absolute;
-        width: 95%;
+        width: 98%;
         bottom: 0px;
+        left: 2%;
     }
 }
