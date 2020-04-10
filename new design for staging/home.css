@@ -978,6 +978,9 @@ ol.v-story-indicators li.triangle {
 .entertainment .section-title-mobile {
     background-color: #e15e07;
 }
+.copy-pad{
+    padding: 30px 0px 25px 0px;
+}
 
 @media (min-width: 768px) {
     .breaking-news-2 .news-title {
