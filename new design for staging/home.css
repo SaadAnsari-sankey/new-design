@@ -291,11 +291,12 @@ body {
 }
 
 .left-box {
-    width: 65%
+    width: calc(100% - 335px);
+    margin-right: 15px !important;
 }
 
 .right-box {
-    width: 35%;
+    width: 320px;
 }
 
 .breaking-news .left-box .left-box-top {
@@ -357,7 +358,7 @@ body {
 }
 
 .breaking-news .right-box .video-title {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     width: min-content !important;
 }
@@ -980,6 +981,9 @@ ol.v-story-indicators li.triangle {
 }
 
 @media (min-width: 768px) {
+    .right-box .right-box-sub {
+        margin-bottom: 9px;
+    }
     .breaking-news-2 .news-title {
         color: #215487;
     }
@@ -1337,7 +1341,7 @@ ol.v-story-indicators li.triangle {
     font-size: 13px;
     -webkit-line-clamp: 2;
     color: #353434;
-    max-height: 30px;
+    max-height: 32px;
     font-weight: bold;
 }
 
@@ -1588,7 +1592,7 @@ ol.v-story-indicators li.triangle {
 
 @media(min-width: 768px) {
     .mts-section .mts-articles .more-top-stories-articles:nth-child(4) {
-        padding-bottom: 3px !important;
+        padding-bottom: 8px !important;
     }
     .mobile-inner-container {
         width: 100%;
@@ -1598,9 +1602,9 @@ ol.v-story-indicators li.triangle {
         width: 80%;
     }
     .rf-section .rf-section-right .article-title-description .article-title {
-        font-size: 13px;
+        font-size: 14px;
         -webkit-line-clamp: 1;
-        max-height: 15px;
+        max-height: 20px;
     }
     .rf-section .more-top-stories {
         width: 179px;
@@ -1729,9 +1733,12 @@ ol.v-story-indicators li.triangle {
         font-size: 15px;
         max-height: 41px;
     }
-    .article-title-description .article-description,
-    .post-time-and-comment {
+    .article-title-description .article-description {
         font-size: 13px;
+        max-height: 66px;
+    }
+    .post-time-and-comment {
+        font-size: 12px;
         max-height: 66px;
     }
     .article-title-description {
