@@ -872,6 +872,20 @@ ol.v-story-indicators li.triangle {
     background-color: #004b8c;
 }
 
+.carousel-indicators .dot-indicators{
+    margin: 0px 5px;
+    display: block;
+    width: 10px;
+    max-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #004b8c;
+}
+.carousel-indicators .dot-indicators.active{
+    opacity: 1;
+    background-color: pink;
+}
+
 
 /* ================================= footer-top ================================= */
 
