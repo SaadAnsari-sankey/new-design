@@ -561,6 +561,7 @@ body {
     .breaking-news .left-box {
         width: 100% !important;
         padding: 0 !important;
+        margin: 0px !important;
     }
     .breaking-news .left-box .left-box-top {
         background: none;
