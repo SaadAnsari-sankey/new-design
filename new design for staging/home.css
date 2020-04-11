@@ -588,6 +588,7 @@ body {
     }
     .breaking-news-2 .left-box {
         width: 100% !important;
+        margin: 0px !important;
     }
     .categories.inner-section-width {
         width: 100% !important;
