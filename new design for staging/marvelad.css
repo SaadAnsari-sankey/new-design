@@ -23,7 +23,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    height: 100%;
+    overflow: scroll;
+    /* background-color: #ffffff; */
 }
 
 .go-top-text {
@@ -213,6 +215,20 @@ body {
 .mobile-nav-link:last-child::after{
     border-right: none;
 }
+
+.adspace{
+    padding-top: 100px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: purple;
+    z-index: -1;
+    overflow: hidden;
+}
+.ad-image{
+    display: none;
+}
+
 /* ============================================================================= */
 
 
@@ -655,6 +671,7 @@ body {
     flex-direction: column;
     align-items: center;
     transition: all ease .25s;
+    background-color: white;
 }
 
 .main-container.open-hamburger {
