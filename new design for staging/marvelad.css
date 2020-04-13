@@ -222,7 +222,8 @@ body {
     overflow: hidden;
 }
 .ad-image{
-
+    width: 100%;
+    height: 100%;
 }
 
 .top-gap-page-wrapper{
@@ -488,6 +489,7 @@ body {
         justify-content: space-around;
         align-items: center;
         font-size: 0.8rem;
+        background-color: white;
     }
     .mobile-logo {
         background-image: url("https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/Sakal.jpg");
