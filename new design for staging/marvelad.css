@@ -23,9 +23,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    overflow: scroll;
-    /* background-color: #ffffff; */
 }
 
 .go-top-text {
@@ -217,11 +214,10 @@ body {
 }
 
 .adspace{
-    padding-top: 100px;
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: purple;
+    background-color: grey;
     z-index: -1;
     overflow: hidden;
 }
@@ -229,6 +225,9 @@ body {
     display: none;
 }
 
+.top-gap-page-wrapper{
+    height: 30vh;
+}
 /* ============================================================================= */
 
 
@@ -671,6 +670,8 @@ body {
     flex-direction: column;
     align-items: center;
     transition: all ease .25s;
+}
+#main-container-id{
     background-color: white;
 }
 
