@@ -125,7 +125,7 @@ body {
 .transparent-hamburger {
     position: absolute;
     width: 100vw;
-    top: 33vh;
+    top: 8vh;
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
@@ -227,7 +227,7 @@ body {
 }
 
 .top-gap-page-wrapper{
-    height: 25vh;
+    height: 0vh;
 }
 /* ============================================================================= */
 
@@ -640,6 +640,9 @@ body {
         display: none;
     }
     .c-indicator{
+        display: none;
+    }
+    .adspace{
         display: none;
     }
     /* .categories .news-title{
