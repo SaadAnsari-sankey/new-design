@@ -123,9 +123,9 @@ body {
 }
 
 .transparent-hamburger {
-    position: fixed;
+    position: absolute;
     width: 100vw;
-    top: 8vh;
+    top: 33vh;
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
@@ -148,7 +148,7 @@ body {
 .transparent-hamburger.open {
     width: 100%;
     transform: translateX(0%);
-    height: 92vh;
+    height: 100%;
 }
 
 .close-side-nav {
@@ -1711,12 +1711,10 @@ ol.v-story-indicators li.triangle {
         width: 179px;
     }
     .transparent-hamburger {
-        /* top: 6vh; */
-        top: 0vh;
+        top: 46vh;
     }
     .transparent-hamburger.open {
-        /* height: 94vh; */
-        height: 100vh;
+        height: 100%;
     }
     .mts-section {
         position: relative;
