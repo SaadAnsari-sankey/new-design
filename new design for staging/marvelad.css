@@ -1050,7 +1050,7 @@ ol.v-story-indicators li.triangle {
 
 @media (min-width: 768px) {
     .top-gap-page-wrapper{
-        height: 40vh;
+        height: 80vh;
     }
     .right-box .right-box-sub {
         margin-bottom: 9px;
@@ -1711,7 +1711,7 @@ ol.v-story-indicators li.triangle {
         width: 179px;
     }
     .transparent-hamburger {
-        top: 46vh;
+        top: 85.95vh;
     }
     .transparent-hamburger.open {
         height: 100%;
