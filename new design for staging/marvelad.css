@@ -222,11 +222,11 @@ body {
     overflow: hidden;
 }
 .ad-image{
-    display: none;
+
 }
 
 .top-gap-page-wrapper{
-    height: 30vh;
+    height: 40vh;
 }
 /* ============================================================================= */
 
@@ -1706,10 +1706,12 @@ ol.v-story-indicators li.triangle {
         width: 179px;
     }
     .transparent-hamburger {
-        top: 6vh;
+        /* top: 6vh; */
+        top: 0vh;
     }
     .transparent-hamburger.open {
-        height: 94vh;
+        /* height: 94vh; */
+        height: 100vh;
     }
     .mts-section {
         position: relative;
