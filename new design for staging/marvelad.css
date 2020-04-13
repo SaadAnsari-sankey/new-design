@@ -227,7 +227,7 @@ body {
 }
 
 .top-gap-page-wrapper{
-    height: 40vh;
+    height: 25vh;
 }
 /* ============================================================================= */
 
@@ -1049,6 +1049,9 @@ ol.v-story-indicators li.triangle {
 }
 
 @media (min-width: 768px) {
+    .top-gap-page-wrapper{
+        height: 40vh;
+    }
     .right-box .right-box-sub {
         margin-bottom: 9px;
     }
