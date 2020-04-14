@@ -893,7 +893,7 @@ ul.list-unstyled {
 
 ol.v-story-indicators li.triangle.active {
     opacity: 1;
-    background-color: pink;
+    background-color: #DC143C;
 }
 
 ol.v-story-indicators li.triangle {
@@ -917,7 +917,7 @@ ol.v-story-indicators li.triangle {
 }
 .carousel-indicators .dot-indicators.active{
     opacity: 1;
-    background-color: pink;
+    background-color: #DC143C;
 }
 
 
