@@ -200,7 +200,7 @@ body {
     height: 6.5vh;
     font-size: 16px;
     background-color: #004B8C;
-    box-shadow: inset 0px 2px 6px rgb(13, 0, 66);
+    box-shadow: inset 0px 2px 3px 0px rgb(25, 0, 125);
     color: white;
 }
 .mobile-nav-link{
@@ -277,6 +277,7 @@ body {
 }
 
 .global-nav-wrapper {
+    height: 3em;
     font-size: 14px;
     font-weight: 600;
     width: 1040px;
@@ -353,7 +354,7 @@ body {
 
 .breaking-news .left-box .left-box-top .row .col-lg-7 .news-title {
     font-size: 16px;
-    max-height: 46px;
+    max-height: 47px;
 }
 
 .breaking-news .left-box .left-box-top .row .col-lg-7 .news-description {
@@ -518,10 +519,13 @@ body {
     }
     .card-img-top {
         height: 180px;
-        width: 97%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3px;
+    }
+    .categories .card-img-top {
+        display: none;
     }
     .mobile-overlap {
         display: flex;
@@ -644,7 +648,7 @@ body {
     .categories .news-description {
         display: none;
     }
-    .c-indicator{
+    .entertainment .c-indicator{
         display: none;
     }
     .adspace{
@@ -872,7 +876,7 @@ body {
 }
 
 .carousel-image {
-    height: 250px;
+    height: 180px;
 }
 
 .entertainment-list-box {
@@ -917,7 +921,7 @@ ul.list-unstyled {
 
 ol.v-story-indicators li.triangle.active {
     opacity: 1;
-    background-color: #DC143C;
+    background-color: #e75480;
 }
 
 ol.v-story-indicators li.triangle {
@@ -941,7 +945,7 @@ ol.v-story-indicators li.triangle {
 }
 .carousel-indicators .dot-indicators.active{
     opacity: 1;
-    background-color: #DC143C;
+    background-color: #e75480;
 }
 
 
@@ -978,7 +982,7 @@ ol.v-story-indicators li.triangle {
 
 .footer-links-div ul li {
     color: #5d5d60;
-    font-size: 12px !important;
+    font-size: 12.5px !important;
 }
 
 .footer-links-div ul li::before {
@@ -1351,7 +1355,7 @@ ol.v-story-indicators li.triangle {
         width: 75%;
     }
     .footer-links-div ul li {
-        font-size: 21px !important;
+        font-size: 19px !important;
         text-shadow: 0.1px 0.1px;
     }
     .footer-links-div ul li::before {
@@ -1724,7 +1728,7 @@ ol.v-story-indicators li.triangle {
         width: 179px;
     }
     .transparent-hamburger {
-        top: 85.95vh;
+        top: 87vh;
     }
     .transparent-hamburger.open {
         height: 100%;
