@@ -234,6 +234,9 @@ body {
     display: none;
     background-color: gray;
     height: 20vh;
+    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/top-jacket+-ad.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .left-jacket-ad{
     display: none;
@@ -243,6 +246,9 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
+    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/verticlead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .right-jacket-ad{
     display: none;
@@ -253,6 +259,9 @@ body {
     height: 100vh;
     top: 0;
     right: 0;
+    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/verticlead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* ============================================================================= */
 
