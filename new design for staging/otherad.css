@@ -527,7 +527,7 @@ body {
         background-color: white;
     }
     .mobile-logo {
-        background-image: url("https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/Sakal.jpg");
+        background-image: url("https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/images/sakal_blue_logo.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -792,7 +792,7 @@ body {
 }
 
 .video-item-card {
-    border-top: 1px solid #1291ff;
+    border-top: 1px solid #63b4cf;
 }
 
 .other-v-story-container .video-item-card:last-child {
