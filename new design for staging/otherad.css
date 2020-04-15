@@ -488,6 +488,7 @@ body {
     box-shadow: 0px 2px 4px #d0c9c9;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    text-align: center;
 }
 
 .breaking-news-2 .right-box .newsletter .newsletter-button {
