@@ -200,7 +200,7 @@ body {
     height: 6.5vh;
     font-size: 16px;
     background-color: #004B8C;
-    box-shadow: inset 0px 2px 3px 0px rgb(25, 0, 125);
+    box-shadow: inset 0px 2px 3px 0px #061014;
     color: white;
 }
 .mobile-nav-link{
