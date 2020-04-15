@@ -657,6 +657,9 @@ body {
     .mobile-nav-wrapper{
         display: flex !important;
     }
+    .source-container{
+        font-size: 10px;
+    }
     /* .categories .news-title{
  *         -webkit-line-clamp: 3;
  *                 max-height: 54px;
