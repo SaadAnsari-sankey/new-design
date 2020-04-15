@@ -1063,7 +1063,13 @@ ol.v-story-indicators li.triangle {
 
 .sakal-logo-footer-box .grey-line {
     width: 75%;
-    border-top: 1px solid gainsboro !important;
+    height: 1px;
+    border-top: none !important;
+    background-image:
+    radial-gradient(
+      white,
+      transparent
+    );
 }
 
 .grey-line {
