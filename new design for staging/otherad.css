@@ -240,7 +240,7 @@ body {
     display: none;
     background-color: gray;
     height: 20vh;
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/top-jacket+-ad.jpeg);
+    background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_728x90_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -250,26 +250,28 @@ body {
     position: fixed;
     background-color: gray;
     width: calc((100% - 1100px)/2);
+    max-width: 160px;
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/verticlead.jpg);
+    background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .right-jacket-ad {
     display: none;
-    background-color: gray;
+    background-color: gray; 
     position: fixed;
     background-color: gray;
     width: calc((100% - 1100px)/2);
+    max-width: 160px;
     height: 100vh;
     top: 0;
     right: 0;
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/verticlead.jpg);
+    background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 
@@ -870,7 +872,7 @@ body {
 }
 
 .main-video .news-title {
-    font-size: 16px;
+    font-size: 18px !important;
 }
 
 .main-video .news-description {
@@ -1983,5 +1985,15 @@ ol.v-story-indicators li.triangle {
         width: 98%;
         bottom: 0px;
         left: 2%;
+    }
+}
+
+@media(min-width:1420px) {
+    .left-jacket-ad {
+        left: calc((100% - 1420px)/2);
+    }
+    
+    .right-jacket-ad {
+        right: calc((100% - 1420px)/2);
     }
 }
