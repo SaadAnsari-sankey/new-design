@@ -237,12 +237,18 @@ body {
 }
 
 .main-container.top-jacket-ad {
+    z-index: -1;
+    position: fixed;
     display: none;
     background-color: gray;
     height: 20vh;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_728x90_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.transparent-div{
+    height: 20vh;
 }
 
 .left-jacket-ad {
