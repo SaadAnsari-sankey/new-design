@@ -213,7 +213,7 @@ body {
     height: 20px;
     right: -7px;
     position: absolute;
-    border-right: 1px solid white;
+    border-right: 1px solid #061014;
 }
 .mobile-nav-link:last-child::after{
     border-right: none;
