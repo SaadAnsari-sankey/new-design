@@ -206,12 +206,14 @@ body {
 .mobile-nav-link{
     text-shadow: 0.5px 0.5px;
     padding: 0px 5px;
+    position: relative;
 }
 .mobile-nav-link::after{
     content: "";
     top: 0px;
-    left: 3vw;
-    position: relative;
+    height: 20px;
+    right: -7px;
+    position: absolute;
     border-right: 1px solid white;
 }
 .mobile-nav-link:last-child::after{
