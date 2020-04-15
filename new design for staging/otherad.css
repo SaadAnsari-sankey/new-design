@@ -299,7 +299,7 @@ body {
     font-size: 12px;
     font-weight: bold;
     line-height: 1.1;
-    color: #174776;
+    color: rgb(0, 75, 160);
 }
 
 .news-section-title:after {
@@ -603,7 +603,7 @@ body {
         color: #5f5d5d;
     }
     .news-title {
-        font-size: 16px !important;
+        font-size: 17px !important;
         font-weight: 600;
         -webkit-line-clamp: 2;
         max-height: 46px;
@@ -705,12 +705,12 @@ body {
     .source-container {
         font-size: 10px;
     }
-    .categories .carousel-inner{
+    .categories .carousel-inner {
         width: 94%;
         margin-left: auto;
         margin-right: auto;
     }
-    .entertainment .carousel{
+    .entertainment .carousel {
         width: 94%;
         margin-left: auto;
         margin-right: auto;
@@ -1112,11 +1112,7 @@ ol.v-story-indicators li.triangle {
     width: 75%;
     height: 1px;
     border-top: none !important;
-    background-image:
-    radial-gradient(
-      white,
-      transparent
-    );
+    background-image: radial-gradient( white, transparent);
 }
 
 .grey-line {
@@ -1724,12 +1720,13 @@ ol.v-story-indicators li.triangle {
     .rf-sub-section-title .plus-sign {
         position: absolute;
         left: 10px;
-        font-size: 11px;
-        color: #6f6e6e;
+        font-size: 10px;
+        color: #524f4f;
     }
     .rf-sub-section-title .angle-sign {
         position: absolute;
         right: 10px;
+        font-size: 20px;
     }
     .rf-sub-section-title {
         background: #D2D2D2;
