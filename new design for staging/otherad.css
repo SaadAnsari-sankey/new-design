@@ -213,7 +213,7 @@ body {
     content: "";
     top: 0px;
     height: 20px;
-    right: -7px;
+    right: -12px;
     position: absolute;
     border-right: 1px solid #061014;
 }
@@ -1069,7 +1069,9 @@ ol.v-story-indicators li.triangle {
     background-position: center;
     background-size: 240px;
     width: 150px;
-    height: 80px;
+    height: 45px;
+    margin-top: 17px;
+    margin-bottom: 16px;
 }
 
 .copyright-text.news-description {
@@ -1085,7 +1087,7 @@ ol.v-story-indicators li.triangle {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .social-icon-img {
@@ -1111,7 +1113,7 @@ ol.v-story-indicators li.triangle {
 
 .sakal-logo-footer-box .grey-line {
     width: 75%;
-    height: 1px;
+    height: 2px;
     border-top: none !important;
     background-image:
     radial-gradient(
