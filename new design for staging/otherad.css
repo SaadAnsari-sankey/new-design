@@ -539,7 +539,7 @@ body {
         background-color: white;
     }
     .mobile-logo {
-        background-image: url("https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/Sakal.jpg");
+        background-image: url("https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/images/sakal_blue_logo.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -703,6 +703,16 @@ body {
     .source-container {
         font-size: 10px;
     }
+    .categories .carousel-inner{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .entertainment .carousel{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     /* .categories .news-title{
  *         -webkit-line-clamp: 3;
  *                 max-height: 54px;
@@ -796,7 +806,7 @@ body {
 }
 
 .video-item-card {
-    border-top: 1px solid #1291ff;
+    border-top: 1px solid #63b4cf;
 }
 
 .other-v-story-container .video-item-card:last-child {
@@ -1030,7 +1040,7 @@ ol.v-story-indicators li.triangle {
 
 .footer-links-div ul li {
     color: #5d5d60;
-    font-size: 12.5px !important;
+    font-size: 14px !important;
 }
 
 .footer-links-div ul li::before {
@@ -1098,7 +1108,13 @@ ol.v-story-indicators li.triangle {
 
 .sakal-logo-footer-box .grey-line {
     width: 75%;
-    border-top: 1px solid gainsboro !important;
+    height: 1px;
+    border-top: none !important;
+    background-image:
+    radial-gradient(
+      white,
+      transparent
+    );
 }
 
 .grey-line {
