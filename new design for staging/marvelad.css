@@ -539,6 +539,7 @@ body {
     }
     .breaking-news-2 .mobile-overlap .news-section-title {
         color: rgb(101, 173, 255);
+        font-size: 14px;
     }
     .breaking-news-2 .mobile-overlap .news-title {
         font-weight: 600;
