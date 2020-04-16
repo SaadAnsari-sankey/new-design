@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: gray;
 }
 
 .go-top-text {
@@ -242,15 +243,18 @@ body {
     height: 100%;
 }
 
-.main-container.top-jacket-ad {
-    z-index: -1;
+.top-jacket-ad {
+    width: 100%;
+    max-width: 1440px;
+    z-index: 1;
     position: fixed;
     display: none;
     background-color: gray;
-    height: 20vh;
+    height: 19vh;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_728x90_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-bottom: 1vh;
 }
 
 .transparent-div {
@@ -262,14 +266,15 @@ body {
     display: none;
     position: fixed;
     background-color: gray;
-    width: calc((100% - 1100px)/2);
+    width: calc((100% - 1120px)/2);
     max-width: 160px;
     height: 100vh;
-    top: 0;
+    top: 19vh;
     left: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-right: 10px;
 }
 
 .right-jacket-ad {
@@ -277,14 +282,19 @@ body {
     background-color: gray;
     position: fixed;
     background-color: gray;
-    width: calc((100% - 1100px)/2);
+    width: calc((100% - 1120px)/2);
     max-width: 160px;
     height: 100vh;
-    top: 0;
+    top: 19vh;
     right: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-left: 10px;
+}
+
+#desktop-side-menu-btn span{
+    margin-right: 0.3em;
 }
 
 
@@ -331,6 +341,7 @@ body {
 }
 
 .global-nav-wrapper {
+    z-index: 2;
     height: 3em;
     font-size: 14px;
     font-weight: 600;
@@ -797,6 +808,7 @@ body {
 }
 
 .main-container {
+    z-index: 2;
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
@@ -1195,7 +1207,7 @@ ol.v-story-indicators li.triangle {
 }
 
 @media (min-width: 768px) {
-    .main-container.top-jacket-ad {
+    .top-jacket-ad {
         display: block;
     }
     .transparent-div {
@@ -2030,9 +2042,9 @@ ol.v-story-indicators li.triangle {
 
 @media(min-width:1420px) {
     .left-jacket-ad {
-        left: calc((100% - 1420px)/2);
+        left: calc((100% - 1440px)/2);
     }
     .right-jacket-ad {
-        right: calc((100% - 1420px)/2);
+        right: calc((100% - 1440px)/2);
     }
 }
