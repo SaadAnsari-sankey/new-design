@@ -34,8 +34,12 @@ body {
 .header-nav .nav-link {
     font-weight: 600;
     color: #004b8c;
+    font-size: 18px;
 }
 
+.day-date{
+    font-size: 14px;
+}
 
 /* body {
     cursor: pointer !important;
@@ -345,7 +349,7 @@ body {
 .global-nav-wrapper {
     z-index: 2;
     height: 3em;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     width: 1040px;
     background-color: #004B8C;
