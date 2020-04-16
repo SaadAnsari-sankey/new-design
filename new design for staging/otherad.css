@@ -824,9 +824,9 @@ body {
     background-color: white;
 }
 
-.main-container.open-hamburger {
+/* .main-container.open-hamburger {
     transform: translateX(70vw);
-}
+} */
 
 .inner-container {
     margin-left: auto;
@@ -1272,9 +1272,9 @@ ol.v-story-indicators li.triangle {
     .hamburger-logo {
         width: 14vw;
     }
-    .main-container.open-hamburger {
-        transform: translateX(15vw);
-    }
+    /* .main-container.open-hamburger {
+        transform: translateX(0vw);
+    } */
     /* ================================= video-story ================================= */
     .section-title-desktop {
         display: inline-block;
@@ -1887,7 +1887,7 @@ ol.v-story-indicators li.triangle {
         width: 179px;
     }
     .transparent-hamburger {
-        top: 24vh;
+        top: 130px;
     }
     .transparent-hamburger.open {
         height: 100%;

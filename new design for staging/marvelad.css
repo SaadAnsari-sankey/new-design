@@ -773,9 +773,9 @@ body {
     background-color: white;
 }
 
-.main-container.open-hamburger {
-    transform: translateX(70vw);
-}
+/* .main-container.open-hamburger {
+    transform: translateX(0vw);
+} */
 
 .inner-container {
     margin-left: auto;
@@ -1218,9 +1218,9 @@ ol.v-story-indicators li.triangle {
     .hamburger-logo {
         width: 14vw;
     }
-    .main-container.open-hamburger {
+    /* .main-container.open-hamburger {
         transform: translateX(15vw);
-    }
+    } */
     /* ================================= video-story ================================= */
     .section-title-desktop {
         display: inline-block;
