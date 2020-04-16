@@ -952,6 +952,8 @@ body {
 
 .entertainment-list:last-child {
     border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 ul.list-unstyled {
