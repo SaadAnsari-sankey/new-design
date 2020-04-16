@@ -339,6 +339,7 @@ body {
 
 .news-content-div:last-child {
     border-bottom: none;
+    padding-bottom: 0px;
 }
 
 .left-box {
