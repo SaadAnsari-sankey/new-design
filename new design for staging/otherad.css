@@ -180,13 +180,19 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 14px;
-    border: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
     padding: 15px;
+}
+.side-nav-content:last-child {
+    border-bottom: 1px solid gainsboro;
 }
 
 .x-style {
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .mobile-global-nav {
