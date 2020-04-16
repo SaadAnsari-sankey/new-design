@@ -266,7 +266,7 @@ body {
 
 .left-jacket-ad {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: gray;
     width: calc((100% - 1120px)/2);
     max-width: 160px;
@@ -282,7 +282,7 @@ body {
 .right-jacket-ad {
     display: none;
     background-color: gray;
-    position: absolute;
+    position: fixed;
     background-color: gray;
     width: calc((100% - 1120px)/2);
     max-width: 160px;
