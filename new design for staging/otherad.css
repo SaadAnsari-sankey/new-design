@@ -270,7 +270,7 @@ body {
     background-color: gray;
     width: calc((100% - 1120px)/2);
     max-width: 160px;
-    height: 100vh;
+    height: 600px;
     top: 0px;
     left: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
@@ -286,7 +286,7 @@ body {
     background-color: gray;
     width: calc((100% - 1120px)/2);
     max-width: 160px;
-    height: 100vh;
+    height: 600px;
     top: 0px;
     right: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
