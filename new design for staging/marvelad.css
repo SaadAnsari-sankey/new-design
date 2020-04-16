@@ -765,7 +765,7 @@ body {
     font-size: 16px;
     color: white;
     margin-bottom: 1rem;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     background-color: #004b8c;
     width: 100%;
     padding: 0.5rem;
