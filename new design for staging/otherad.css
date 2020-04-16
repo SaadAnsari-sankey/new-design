@@ -247,7 +247,7 @@ body {
     background-size: 100% 100%;
 }
 
-.transparent-div{
+.transparent-div {
     display: none;
     height: 20vh;
 }
@@ -268,7 +268,7 @@ body {
 
 .right-jacket-ad {
     display: none;
-    background-color: gray; 
+    background-color: gray;
     position: fixed;
     background-color: gray;
     width: calc((100% - 1100px)/2);
@@ -517,12 +517,27 @@ body {
     color: #353434;
     font-weight: bold;
 }
-.other-v-story-container .news-title{
-    -webkit-line-clamp:3;
-    max-height: 63px;        
+
+.other-v-story-container .news-title {
+    -webkit-line-clamp: 3;
+    max-height: 63px;
 }
 
 @media (max-width: 768px) {
+    .breaking-news-2 .left-box .col-md-6:nth-child(2) {
+        margin-top: 14px !important;
+        margin-bottom: 0px !important;
+    }
+    .right-border-zero .news-section-title {
+        margin-top: 0px !important;
+    }
+    .breaking-news .news-section-title {
+        margin-bottom: 6px;
+        margin-top: 3px;
+    }
+    .breaking-news .left-box .left-box-bottom .row:nth-child(2) .col-sm-12:nth-child(1) {
+        border-top: gainsboro solid 1px;
+    }
     .right-border-zero .news-description {
         color: black !important;
         font-weight: 500;
@@ -735,17 +750,17 @@ body {
         margin-top: 17px;
         margin-bottom: 5px;
     }
-    .other-v-story-container .news-title{
-        max-height: 75px;        
+    .other-v-story-container .news-title {
+        max-height: 75px;
     }
-    .main-v-story-container .video-item-card .news-title{
+    .main-v-story-container .video-item-card .news-title {
         -webkit-line-clamp: 3;
         max-height: 73px;
     }
-    .video-item-card .v-image{
+    .video-item-card .v-image {
         height: 110px;
     }
-    .categories .news-title{
+    .categories .news-title {
         -webkit-line-clamp: 3;
         max-height: 65px;
     }
@@ -1172,7 +1187,7 @@ ol.v-story-indicators li.triangle {
     .main-container.top-jacket-ad {
         display: block;
     }
-    .transparent-div{
+    .transparent-div {
         display: block;
     }
     .right-box .right-box-sub {
@@ -2006,7 +2021,6 @@ ol.v-story-indicators li.triangle {
     .left-jacket-ad {
         left: calc((100% - 1420px)/2);
     }
-    
     .right-jacket-ad {
         right: calc((100% - 1420px)/2);
     }
