@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f2f4fc;
 }
 
 .go-top-text {
@@ -180,13 +181,19 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 14px;
-    border: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
     padding: 15px;
+}
+.side-nav-content:last-child {
+    border-bottom: 1px solid gainsboro;
 }
 
 .x-style {
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .mobile-global-nav {
@@ -237,33 +244,39 @@ body {
 }
 
 .main-container.top-jacket-ad {
-    z-index: -1;
-    position: fixed;
+    /* width: 110%; */
+    max-width: 1120px;
+    z-index: 1;
+    /* position: fixed; */
     display: none;
     background-color: gray;
-    height: 20vh;
+    height: 90px;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_728x90_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .transparent-div {
     display: none;
-    height: 20vh;
+    height: 100px;
 }
 
 .left-jacket-ad {
     display: none;
     position: fixed;
     background-color: gray;
-    width: calc((100% - 1100px)/2);
+    width: calc((100% - 1120px)/2);
     max-width: 160px;
-    height: 100vh;
-    top: 0;
+    height: 600px;
+    top: 0px;
     left: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-right: 10px;
 }
 
 .right-jacket-ad {
@@ -271,14 +284,19 @@ body {
     background-color: gray;
     position: fixed;
     background-color: gray;
-    width: calc((100% - 1100px)/2);
+    width: calc((100% - 1120px)/2);
     max-width: 160px;
-    height: 100vh;
-    top: 0;
+    height: 600px;
+    top: 0px;
     right: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-left: 10px;
+}
+
+#desktop-side-menu-btn span{
+    margin-right: 0.3em;
 }
 
 
@@ -325,6 +343,7 @@ body {
 }
 
 .global-nav-wrapper {
+    z-index: 2;
     height: 3em;
     font-size: 14px;
     font-weight: 600;
@@ -791,6 +810,7 @@ body {
 }
 
 .main-container {
+    z-index: 2;
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
@@ -804,9 +824,9 @@ body {
     background-color: white;
 }
 
-.main-container.open-hamburger {
+/* .main-container.open-hamburger {
     transform: translateX(70vw);
-}
+} */
 
 .inner-container {
     margin-left: auto;
@@ -1252,9 +1272,9 @@ ol.v-story-indicators li.triangle {
     .hamburger-logo {
         width: 14vw;
     }
-    .main-container.open-hamburger {
-        transform: translateX(15vw);
-    }
+    /* .main-container.open-hamburger {
+        transform: translateX(0vw);
+    } */
     /* ================================= video-story ================================= */
     .section-title-desktop {
         display: inline-block;
@@ -1867,7 +1887,7 @@ ol.v-story-indicators li.triangle {
         width: 179px;
     }
     .transparent-hamburger {
-        top: 27vh;
+        top: 130px;
     }
     .transparent-hamburger.open {
         height: 100%;
@@ -2024,9 +2044,9 @@ ol.v-story-indicators li.triangle {
 
 @media(min-width:1420px) {
     .left-jacket-ad {
-        left: calc((100% - 1420px)/2);
+        left: calc((100% - 1440px)/2);
     }
     .right-jacket-ad {
-        right: calc((100% - 1420px)/2);
+        right: calc((100% - 1440px)/2);
     }
 }

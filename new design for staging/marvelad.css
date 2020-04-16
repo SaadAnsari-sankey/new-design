@@ -180,13 +180,19 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 14px;
-    border: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
     padding: 15px;
+}
+.side-nav-content:last-child {
+    border-bottom: 1px solid gainsboro;
 }
 
 .x-style {
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .mobile-global-nav {
@@ -240,6 +246,9 @@ body {
     height: 0vh;
 }
 
+#desktop-side-menu-btn span{
+    margin-right: 0.3em;
+}
 
 /* ============================================================================= */
 
@@ -764,9 +773,9 @@ body {
     background-color: white;
 }
 
-.main-container.open-hamburger {
-    transform: translateX(70vw);
-}
+/* .main-container.open-hamburger {
+    transform: translateX(0vw);
+} */
 
 .inner-container {
     margin-left: auto;
@@ -1209,9 +1218,9 @@ ol.v-story-indicators li.triangle {
     .hamburger-logo {
         width: 14vw;
     }
-    .main-container.open-hamburger {
+    /* .main-container.open-hamburger {
         transform: translateX(15vw);
-    }
+    } */
     /* ================================= video-story ================================= */
     .section-title-desktop {
         display: inline-block;
