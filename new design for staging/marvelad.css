@@ -728,6 +728,10 @@ body {
         -webkit-line-clamp: 3;
         max-height: 65px;
     }
+    .icon-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 
@@ -1047,6 +1051,7 @@ ol.v-story-indicators li.triangle {
 
 .footer-bottom {
     background-color: #e3e3e3;
+    padding-bottom: 40px;
 }
 
 .footer-links-div {
