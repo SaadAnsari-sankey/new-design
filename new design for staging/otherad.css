@@ -243,33 +243,35 @@ body {
     height: 100%;
 }
 
-.top-jacket-ad {
-    width: 100%;
+.main-container.top-jacket-ad {
+    width: 110%;
     max-width: 1440px;
     z-index: 1;
-    position: fixed;
+    /* position: fixed; */
     display: none;
     background-color: gray;
-    height: 19vh;
+    height: 90px;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_728x90_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-bottom: 1vh;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .transparent-div {
     display: none;
-    height: 20vh;
+    height: 100px;
 }
 
 .left-jacket-ad {
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: gray;
     width: calc((100% - 1120px)/2);
     max-width: 160px;
     height: 100vh;
-    top: 19vh;
+    top: 0px;
     left: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
@@ -280,12 +282,12 @@ body {
 .right-jacket-ad {
     display: none;
     background-color: gray;
-    position: fixed;
+    position: absolute;
     background-color: gray;
     width: calc((100% - 1120px)/2);
     max-width: 160px;
     height: 100vh;
-    top: 19vh;
+    top: 0px;
     right: 0;
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_160x600_v3.gif);
     background-repeat: no-repeat;
@@ -1207,7 +1209,7 @@ ol.v-story-indicators li.triangle {
 }
 
 @media (min-width: 768px) {
-    .top-jacket-ad {
+    .main-container.top-jacket-ad {
         display: block;
     }
     .transparent-div {
@@ -1885,7 +1887,7 @@ ol.v-story-indicators li.triangle {
         width: 179px;
     }
     .transparent-hamburger {
-        top: 27vh;
+        top: 24vh;
     }
     .transparent-hamburger.open {
         height: 100%;
