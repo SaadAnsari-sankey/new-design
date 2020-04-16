@@ -784,6 +784,7 @@ body {
 
 .video-story {
     background-color: #004b8c;
+    margin-bottom: 10px;
 }
 
 .video-story .v-views .fa {
@@ -1105,7 +1106,7 @@ ol.v-story-indicators li.triangle {
 }
 
 .sakal-logo-footer-box .grey-line {
-    width: 75%;
+    width: 85%;
     height: 2px;
     border-top: none !important;
     background-image: radial-gradient( white, transparent);
