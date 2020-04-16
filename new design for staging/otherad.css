@@ -244,8 +244,8 @@ body {
 }
 
 .main-container.top-jacket-ad {
-    width: 110%;
-    max-width: 1440px;
+    /* width: 110%; */
+    max-width: 1120px;
     z-index: 1;
     /* position: fixed; */
     display: none;
