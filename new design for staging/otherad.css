@@ -303,6 +303,9 @@ body {
     margin-right: 0.3em;
 }
 
+.carousel-indicators.c-indicator{
+    bottom: 10px !important;
+}
 
 /* ============================================================================= */
 
@@ -800,6 +803,9 @@ body {
     .entertainment-list:last-child {
         margin-bottom: -6px;
     }
+    .carousel-indicators.v-story-indicators{
+        bottom: 10px !important;
+    }
 }
 
 
@@ -846,7 +852,7 @@ body {
 .mobile-inner-container {
     margin-left: auto;
     margin-right: auto;
-    width: 94%;
+    width: 94% !important;
 }
 
 .section-title-mobile {
@@ -1864,7 +1870,7 @@ ol.v-story-indicators li.triangle {
         padding-bottom: 8px !important;
     }
     .mobile-inner-container {
-        width: 100%;
+        width: 100% !important;
         margin: 0px;
     }
     .inner-container {
