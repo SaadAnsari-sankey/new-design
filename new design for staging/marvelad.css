@@ -1826,6 +1826,9 @@ ol.v-story-indicators li.triangle {
         font-size: 14px;
         -webkit-line-clamp: 3;
         max-height: 53px;
+        margin-bottom: 0.3rem !important;
+    }
+    .cl-section .cl-right-section .article-title-description .article-title{
         margin-bottom: 0.5rem !important;
     }
     .ctl-right-bar-dsk {
