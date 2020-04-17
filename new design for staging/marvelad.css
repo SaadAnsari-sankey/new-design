@@ -185,13 +185,13 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 14px;
-    border-left: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-top: 1px solid gainsboro;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
     padding: 15px;
 }
 .side-nav-content:last-child {
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .x-style {
@@ -351,7 +351,7 @@ body {
 }
 
 .news-content-div {
-    border-bottom: gainsboro solid 1px;
+    border-bottom: #e1e1e1 solid 1px;
 }
 
 .news-content-div:last-child {
@@ -512,7 +512,7 @@ body {
         margin-top: 3px;
     }
     .breaking-news .left-box .left-box-bottom .row:nth-child(2) .col-sm-12:nth-child(1) {
-        border-top: gainsboro solid 1px;
+        border-top: #e1e1e1 solid 1px;
     }
     .right-border-zero .news-description {
         color: black !important;
@@ -526,10 +526,10 @@ body {
         color: #4a4545;
     }
     section.breaking-news .col-sm-12 {
-        border-bottom: gainsboro solid 1px;
+        border-bottom: #e1e1e1 solid 1px;
     }
     section.breaking-news-2 .col-sm-12 {
-        border-bottom: gainsboro solid 1px;
+        border-bottom: #e1e1e1 solid 1px;
     }
     .global-nav-wrapper {
         display: none !important;
@@ -988,7 +988,7 @@ body {
     background-color: white;
     color: black;
     padding: 2px 0px;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid #e1e1e1;
     font-size: 0.7em;
 }
 
@@ -1450,8 +1450,8 @@ ol.v-story-indicators li.triangle {
     }
     .footer-breadcrumbs-container {
         width: 80%;
-        border-top: 1px solid gainsboro;
-        border-bottom: 1px solid gainsboro;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
         font-size: 16px;
         color: #5d5d60;
         text-shadow: 0.1px 0.1px;
@@ -1482,7 +1482,7 @@ ol.v-story-indicators li.triangle {
     .categories .news-title {
         -webkit-line-clamp: 1;
         max-height: 18px;
-        font-size: 14px;
+        font-size: 13px;
         color: #004b8c;
     }
     .other-v-story-container .news-title {
@@ -1782,7 +1782,7 @@ ol.v-story-indicators li.triangle {
     }
     .more-top-stories-articles {
         padding: 8px 0px;
-        border-bottom: 1px solid gainsboro;
+        border-bottom: 1px solid #e1e1e1;
     }
     .rf-sub-section-title {
         display: flex;
