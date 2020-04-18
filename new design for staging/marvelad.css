@@ -37,7 +37,7 @@ body {
     font-size: 18px;
 }
 
-.day-date{
+.day-date {
     font-size: 14px;
 }
 
@@ -83,7 +83,7 @@ body {
     font-weight: 500;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     max-height: 72px;
 }
@@ -191,6 +191,7 @@ body {
     border-top: 1px solid #d9d9d9;
     padding: 15px;
 }
+
 .side-nav-content:last-child {
     border-bottom: 1px solid #d9d9d9;
 }
@@ -252,12 +253,14 @@ body {
     height: 0vh;
 }
 
-#desktop-side-menu-btn span{
+#desktop-side-menu-btn span {
     margin-right: 0.3em;
 }
-.carousel-indicators.c-indicator{
+
+.carousel-indicators.c-indicator {
     bottom: 10px !important;
 }
+
 
 /* ============================================================================= */
 
@@ -378,18 +381,18 @@ body {
     border-bottom: #d9d9d9 solid 1px;
 }
 
-.breaking-news .left-box .left-box-top .row .col-lg-7 .news-title {
+.breaking-news .left-box .left-box-top .row .n1 .news-title {
     font-size: 18px;
     max-height: 47px;
 }
 
-.breaking-news .left-box .left-box-top .row .col-lg-7 .news-description {
+.breaking-news .left-box .left-box-top .row .col-lg-4 .news-description {
     -webkit-line-clamp: 3;
     font-size: 14px;
     max-height: 55px;
 }
 
-.breaking-news .left-box .left-box-top .row .col-lg-4 .news-title {
+.breaking-news .left-box .left-box-top .row .n2 .news-title {
     font-size: 14px;
 }
 
@@ -753,7 +756,7 @@ body {
     .entertainment-list:last-child {
         margin-bottom: -6px;
     }
-    .carousel-indicators.v-story-indicators{
+    .carousel-indicators.v-story-indicators {
         bottom: 10px !important;
     }
 }
@@ -787,6 +790,7 @@ body {
 #main-container-id {
     background-color: white;
 }
+
 
 /* .main-container.open-hamburger {
     transform: translateX(0vw);
@@ -1172,6 +1176,33 @@ ol.v-story-indicators li.triangle {
 }
 
 @media (min-width: 768px) {
+    .breaking-news .left-box .left-box-top .row .section-type-1-image {
+        width: 8%;
+    }
+    .breaking-news .left-box .left-box-top .row .n1 {
+        width: 55%;
+        padding-right: 17px;
+        position: relative;
+    }
+    .breaking-news .left-box .left-box-top .row .n2 {
+        width: 37%;
+    }
+    .breaking-news .left-box .left-box-bottom .nl,
+    .breaking-news .left-box .left-box-bottom .row3nl {
+        width: 63%;
+        padding-right: 20px;
+        position: relative;
+    }
+    .breaking-news .left-box .left-box-bottom .nr,
+    .breaking-news .left-box .left-box-bottom .row3nr {
+        width: 37%;
+    }
+    .breaking-news .left-box .left-box-bottom .row:nth-child(1) .nl .news-description {
+        -webkit-line-clamp: 1;
+    }
+    .breaking-news .left-box .left-box-bottom .row:nth-child(2) .row3nr .news-title {
+        font-size: 13px;
+    }
     .top-gap-page-wrapper {
         height: 80vh;
     }
@@ -1193,7 +1224,7 @@ ol.v-story-indicators li.triangle {
         margin-top: auto;
         margin-bottom: auto;
         position: absolute;
-        right: 0px;
+        right: 10px;
         top: 21px;
     }
     .breaking-news-2 .left-box .card-img-top {
@@ -1217,7 +1248,7 @@ ol.v-story-indicators li.triangle {
         margin-top: auto;
         margin-bottom: auto;
         position: absolute;
-        right: 0px;
+        right: 10px;
         top: 10px;
     }
     .right-border-2::before {
@@ -1229,7 +1260,7 @@ ol.v-story-indicators li.triangle {
         margin-top: auto;
         margin-bottom: auto;
         position: absolute;
-        right: 0px;
+        right: 10px;
         top: 11px;
     }
     .hamburger-logo {
@@ -1835,7 +1866,7 @@ ol.v-story-indicators li.triangle {
         max-height: 53px;
         margin-bottom: 0.3rem !important;
     }
-    .cl-section .cl-right-section .article-title-description .article-title{
+    .cl-section .cl-right-section .article-title-description .article-title {
         margin-bottom: 0.5rem !important;
     }
     .ctl-right-bar-dsk {
@@ -1957,7 +1988,7 @@ ol.v-story-indicators li.triangle {
         font-size: 14px;
         max-height: 66px;
     }
-    .cl-right-section .article-title-description .article-description{
+    .cl-right-section .article-title-description .article-description {
         font-size: 13px;
     }
     .post-time-and-comment {
