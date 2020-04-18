@@ -10,12 +10,13 @@ body {
 /* ================================= common ================================= */
 
 @font-face {
-    font-family: ekmukta;
-    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf);
+    font-family: 'sakalfont';
+    font-display: swap;
+    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf) format("truetype"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.eot) format("eot"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.svg) format("svg")
 }
 
 * {
-    font-family: ekmukta;
+    font-family: sakalfont;
 }
 
 .home-page-wrapper {
@@ -339,7 +340,7 @@ body {
     background-position: center;
     width: 100%;
     height: 110px;
-    border-bottom: #d9d9d9 solid 1px;
+    border-bottom: #B5B5B5 solid 1px;
     font-size: 12px;
     background-size: 266px 160px;
 }
@@ -1651,7 +1652,7 @@ ol.v-story-indicators li.triangle {
     position: absolute;
     width: 92%;
     bottom: 3px;
-    border-bottom: 1px solid #b3afaf;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .ca-sak-lab,
