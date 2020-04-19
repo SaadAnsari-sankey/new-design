@@ -461,11 +461,12 @@ body {
 }
 
 .breaking-news-2 .right-box {
-    height: 350px;
+    /* height: 350px; */
 }
 
 .breaking-news-2 .right-box .newsletter {
     height: 100px;
+    margin-top: 18px;
 }
 
 .breaking-news-2 .right-box .newsletter .newsletter-input {
@@ -1555,8 +1556,12 @@ ol.v-story-indicators li.triangle {
         max-height: 75px;
     }
     .row.adjust-categories{
-        margin-left: -24px !important;
+        margin-left: -1.5rem !important;
         margin-right: 0px !important;
+    }
+    .breaking-news-2 .news-description{
+        -webkit-line-clamp: 5;
+        max-height: 92px;
     }
 }
 
