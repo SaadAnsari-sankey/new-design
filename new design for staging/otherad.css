@@ -257,6 +257,10 @@ body {
     bottom: 10px !important;
 }
 
+.row.adjust-categories{
+    margin: 0px !important;
+}
+
 
 /* ============================================================================= */
 
@@ -1550,6 +1554,10 @@ ol.v-story-indicators li.triangle {
     .other-v-story-container .news-title {
         font-size: 19px;
         max-height: 75px;
+    }
+    .row.adjust-categories{
+        margin-left: -24px !important;
+        margin-right: 0px !important;
     }
 }
 
