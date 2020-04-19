@@ -236,9 +236,10 @@ body {
 
 .mobile-nav-link::after {
     content: "";
-    top: 0px;
-    height: 20px;
-    right: -5px;
+    top: 1px;
+    height: 21px;
+    width: 1px;
+    right: -1.4vw;
     position: absolute;
     border-right: 1px solid #061014;
 }
