@@ -493,10 +493,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .breaking-news .left-box .left-box-top .row .n1,
-    .breaking-news .left-box .left-box-top .row .n2 {
-        padding-top: 18px !important;
-    }
     .breaking-news-2 .left-box .col-md-6:nth-child(2) {
         margin-top: 14px !important;
         margin-bottom: 0px !important;
@@ -1174,6 +1170,10 @@ ol.v-story-indicators li.triangle {
 }
 
 @media (min-width: 768px) {
+    .breaking-news .left-box .left-box-top .row .n1,
+    .breaking-news .left-box .left-box-top .row .n2 {
+        padding-top: 18px !important;
+    }
     .breaking-news .left-box .left-box-top .row .n2 .news-description,
     .breaking-news .left-box .left-box-bottom .row:nth-child(2) .row3nr .news-description {
         font-size: 13px;
