@@ -880,11 +880,11 @@ body {
 }
 
 .video-item-info .v-time {
-    color: white;
+    color: #e0dddd;
 }
 
 .video-item-info .v-views {
-    color: white;
+    color: #e0dddd;
 }
 
 .main-video.video-item-info {

@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f2f4fc;
 }
 
 .go-top-text {
@@ -880,11 +881,11 @@ body {
 }
 
 .video-item-info .v-time {
-    color: white;
+    color: #e0dddd;
 }
 
 .video-item-info .v-views {
-    color: white;
+    color: #e0dddd;
 }
 
 .main-video.video-item-info {
