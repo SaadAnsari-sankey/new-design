@@ -44,6 +44,10 @@ body {
     padding: 8px 13px;
 }
 
+.global-nav-wrapper .nav-link{
+    padding: 8px 13px;
+}
+
 .day-date {
     font-size: 14px;
 }
