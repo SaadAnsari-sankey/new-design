@@ -1407,7 +1407,7 @@ ol.v-story-indicators li.triangle {
     .entertainment-list-box {
         background-color: #ff571c;
         height: 250px;
-        width: 43%;
+        width: 42%;
     }
     .entertainment-list {
         /* height: 80px; */
@@ -1472,6 +1472,7 @@ ol.v-story-indicators li.triangle {
     .ad-block-desktop {
         display: block;
         margin: 0px;
+        padding: 13px;
     }
     .entertainment .news-description {
         display: none;
