@@ -1735,6 +1735,10 @@ ol.v-story-indicators li.triangle {
 }
 
 @media(max-width:768px) {
+    .rf-section .article-title-description .article-description {
+        -webkit-line-clamp: 1;
+        max-height: 16px;
+    }
     .mts-section .post-time-and-comment {
         margin-bottom: 8px;
     }
