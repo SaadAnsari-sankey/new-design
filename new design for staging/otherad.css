@@ -369,11 +369,6 @@ body {
     border-bottom: #d9d9d9 solid 1px;
 }
 
-.breaking-news .left-box .left-box-top .row .n1,
-.breaking-news .left-box .left-box-top .row .n2 {
-    padding-top: 18px !important;
-}
-
 .breaking-news .left-box .left-box-top .row .n1 .news-title {
     font-size: 18px;
     line-height: 1.4;
@@ -498,6 +493,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .breaking-news .left-box .left-box-top .row .n1,
+    .breaking-news .left-box .left-box-top .row .n2 {
+        padding-top: 18px !important;
+    }
     .breaking-news-2 .left-box .col-md-6:nth-child(2) {
         margin-top: 14px !important;
         margin-bottom: 0px !important;
@@ -1416,10 +1415,10 @@ ol.v-story-indicators li.triangle {
         padding: 15px 0px 10px 0px;
         border-bottom: 1px dashed white;
     }
-    .entertainment-list:first-child{
+    .entertainment-list:first-child {
         padding: 30px 0px 10px 0px;
     }
-    .entertainment-list:nth-child(3){
+    .entertainment-list:nth-child(3) {
         padding: 15px 0px 10px 0px;
         border-bottom: none;
     }
@@ -2071,8 +2070,8 @@ ol.v-story-indicators li.triangle {
 }
 
 
-
 /* ===================== Other Ad Changes =============================== */
+
 .main-container.top-jacket-ad {
     /* width: 110%; */
     max-width: 1120px;
@@ -2125,7 +2124,7 @@ ol.v-story-indicators li.triangle {
     margin-left: 10px;
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px) {
     .main-container.top-jacket-ad {
         display: block;
     }
@@ -2137,7 +2136,7 @@ ol.v-story-indicators li.triangle {
     }
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1200px) {
     .left-jacket-ad {
         display: block;
     }

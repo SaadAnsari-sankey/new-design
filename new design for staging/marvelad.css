@@ -369,11 +369,6 @@ body {
     border-bottom: #d9d9d9 solid 1px;
 }
 
-.breaking-news .left-box .left-box-top .row .n1,
-.breaking-news .left-box .left-box-top .row .n2 {
-    padding-top: 18px !important;
-}
-
 .breaking-news .left-box .left-box-top .row .n1 .news-title {
     font-size: 18px;
     line-height: 1.4;
@@ -1175,6 +1170,10 @@ ol.v-story-indicators li.triangle {
 }
 
 @media (min-width: 768px) {
+    .breaking-news .left-box .left-box-top .row .n1,
+    .breaking-news .left-box .left-box-top .row .n2 {
+        padding-top: 18px !important;
+    }
     .breaking-news .left-box .left-box-top .row .n2 .news-description,
     .breaking-news .left-box .left-box-bottom .row:nth-child(2) .row3nr .news-description {
         font-size: 13px;
@@ -1416,10 +1415,10 @@ ol.v-story-indicators li.triangle {
         padding: 15px 0px 10px 0px;
         border-bottom: 1px dashed white;
     }
-    .entertainment-list:first-child{
+    .entertainment-list:first-child {
         padding: 30px 0px 10px 0px;
     }
-    .entertainment-list:nth-child(3){
+    .entertainment-list:nth-child(3) {
         padding: 15px 0px 10px 0px;
         border-bottom: none;
     }
@@ -2072,6 +2071,7 @@ ol.v-story-indicators li.triangle {
 
 
 /* =========== marvel ad changes================= */
+
 .adspace {
     display: none;
     position: fixed;
@@ -2091,7 +2091,7 @@ ol.v-story-indicators li.triangle {
     height: 0vh;
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px) {
     .adspace {
         display: block;
     }
