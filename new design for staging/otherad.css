@@ -150,7 +150,7 @@ body {
     transform: translateX(-100%);
     transition: all ease .25s;
     background-color: #00000000;
-    z-index: 5;
+    z-index: 21;
 }
 
 .mobile-side-nav {
@@ -227,6 +227,9 @@ body {
     background-color: #004B8C;
     box-shadow: inset 0px 2px 3px 0px #061014;
     color: white;
+    position: sticky;
+    top: 60px;
+    z-index: 20;
 }
 
 .mobile-nav-link {
@@ -268,7 +271,7 @@ body {
 }
 
 .transparent-hamburger.open.sticky{
-    top: 40px;
+    top: 60px;
 }
 
 /* ============================================================================= */
@@ -570,6 +573,9 @@ body {
         align-items: center;
         font-size: 0.8rem;
         background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 20;
     }
     .mobile-logo {
         background-image: url("https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/images/sakal_blue_logo.png");
@@ -1579,6 +1585,9 @@ ol.v-story-indicators li.triangle {
     .breaking-news-2 .news-description{
         -webkit-line-clamp: 5;
         max-height: 92px;
+    }
+    .transparent-hamburger.open.sticky{
+        top: 40px;
     }
 }
 
