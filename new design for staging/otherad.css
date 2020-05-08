@@ -267,7 +267,7 @@ body {
 .sticky {
     position: fixed;
     top: 0;
-    z-index: 20;
+    z-index: 21;
 }
 
 .transparent-hamburger.open.sticky{
