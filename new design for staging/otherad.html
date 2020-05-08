@@ -104,9 +104,11 @@
                 </nav>
             </div>
 
-            <div class="global-nav-wrapper">
-                <div class="ten"></div>
+            <div class="global-nav-wrapper global-nav-space">
                 <div class="global-nav d-flex align-items-center">
+                    <div class="global-nav-search d-flex justify-content-end pb-md-1 pr-md-3 pt-md-1">
+                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                    </div>
                     <div class="global-nav-search d-flex justify-content-end pb-md-1">
                         <i class="fa fa fa-search"></i>
                     </div>
@@ -136,8 +138,8 @@
                         <div class="nav-link active" href="#">कोकण</div>
                     </nav>
                 </div>
-                <div class="ten">
-                    <div class="user-login d-flex justify-content-center align-items-center ml-auto">
+                <div class="global-nav-right-div">
+                    <div class="user-login d-flex justify-content-end align-items-center ml-auto">
                         <div style="margin-right: 10px;">Sign In</div>
                         <i class="fa fa-user"></i>
                     </div>
@@ -821,7 +823,7 @@
                 <!--- ad -->
 
 
-                <div class="ad-block-top-desktop d-none d-md-flex d-sm-none mt-md-0" style="height: 100px;width:83%;"></div>
+                <div class="ad-block-top-desktop d-none d-md-flex d-sm-none mt-md-0" style="height: 100px;width:95%;"></div>
 
                 <!---end ad--->
 
@@ -1932,6 +1934,18 @@
                     top: 0,
                     behavior: 'smooth'
                 });
+            });
+        </script>
+        <script>
+            var num = 100; //number of pixels before modifying styles
+            jQuery(window).bind('scroll', function () {
+                if (jQuery(window).scrollTop() > num) {
+                    jQuery('.global-nav-wrapper').addClass('sticky');
+                    jQuery('.transparent-hamburger').addClass('sticky');
+                } else {
+                    jQuery('.global-nav-wrapper').removeClass('sticky');
+                    jQuery('.transparent-hamburger').removeClass('sticky');
+                }
             });
         </script>
 
