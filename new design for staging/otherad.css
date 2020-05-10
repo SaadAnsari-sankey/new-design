@@ -2199,18 +2199,20 @@ ol.v-story-indicators li.triangle {
 
 @media(min-width: 1200px) {
     .left-jacket-ad {
-        display: block;
+        /* display: block; */
     }
     .right-jacket-ad {
-        display: block;
+        /* display: block; */
     }
 }
 
 @media(min-width:1420px) {
     .left-jacket-ad {
+        display: block;
         left: calc((100% - 1440px)/2);
     }
     .right-jacket-ad {
+        display: block;
         right: calc((100% - 1440px)/2);
     }
 }
