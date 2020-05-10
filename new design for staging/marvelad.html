@@ -20,7 +20,7 @@
             <div class="adspace">
                 <img class="ad-image" src="https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/images/marvel-ad.jpg">
             </div>
-            <div class="top-gap-page-wrapper"></div>
+            <div class="top-gap-page-wrapper sticky-nav-helper"></div>
             <!-- end marvel ad changes -->
 
             <div id="mobile-hamburger" class="d-flex justify-content-center transparent-hamburger">
@@ -1894,7 +1894,7 @@
             });
         </script>
         <script>
-            var num = jQuery('.top-gap-page-wrapper').height(); //number of pixels before modifying styles
+            var num = jQuery('.sticky-nav-helper').height(); //number of pixels before modifying styles
             console.log(num);
             jQuery(window).bind('scroll', function () {
                 if (jQuery(window).scrollTop() > num) {
