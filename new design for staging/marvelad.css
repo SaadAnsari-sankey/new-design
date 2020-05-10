@@ -1964,7 +1964,7 @@ ol.v-story-indicators li.triangle {
         width: 93%;
     }
     .cl-section .cl-right-section {
-        width: calc(100% - 179px);
+        width: calc(100% - 181px);
         position: relative;
     }
     .cl-section .cl-title-section {
@@ -1978,7 +1978,7 @@ ol.v-story-indicators li.triangle {
         width: 93%;
     }
     .mts-section .more-top-stories-right-container {
-        width: 125px;
+        width: 130px;
     }
     .mts-section .mts-articles {
         width: calc(100% - 125px);
