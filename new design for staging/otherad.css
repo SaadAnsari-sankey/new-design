@@ -350,7 +350,7 @@ body {
 }
 
 .header {
-    width: 93%;
+    width: 100%;
 }
 
 .header-logo {
@@ -1587,7 +1587,22 @@ ol.v-story-indicators li.triangle {
         max-height: 92px;
     }
     .transparent-hamburger.open.sticky{
-        top: 40px;
+        top: 140px;
+    }
+    .header.sticky{
+        top: 140px;
+        z-index: 20;
+        background-color: white;
+        position: sticky;
+    }
+    .global-nav-wrapper.sticky{
+        top: 100px;
+        position: sticky;
+    }
+    .main-container.top-jacket-ad.sticky{
+        top:0;
+        z-index: 20;
+        position: sticky;
     }
 }
 
@@ -1972,6 +1987,7 @@ ol.v-story-indicators li.triangle {
         width: 181px;
     }
     .transparent-hamburger.open {
+        top: 140px;
         height: 100%;
     }
     .mts-section {

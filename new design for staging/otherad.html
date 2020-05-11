@@ -17,7 +17,8 @@
         <div class="home-page-wrapper">
 
             <!-- start other ad changes -->
-            <div class="main-container top-jacket-ad sticky-nav-helper"></div>
+            <div class="ht-zero sticky-nav-helper"></div>
+            <div class="main-container top-jacket-ad other-sticky"></div>
             <div class="left-jacket-ad"></div>
             <div class="right-jacket-ad"></div>
             <!-- <div class="transparent-div"></div> -->
@@ -106,20 +107,22 @@
             <div id="main-container-id" class="main-container pt-2 pt-md-0">
 
                 <div class="header mb-2">
-                    <div class="header-logo d-flex align-items-end py-1">
-                        <div class="day-date ">Tuesday, March 24, 2020</div>
-                    </div>
-                    <div class="header-nav pt-md-2">
-                        <nav class="nav">
-                            <div class="nav-link active py-1 pl-0" href="#">ताज्या </div>
-                            <div class="nav-link active py-1 pl-0" href="#">मुख्य</div>
-                            <div class="nav-link active py-1 pl-0" href="#">राजकारण</div>
-                            <div class="nav-link active py-1 pl-0" href="#">महाराष्ट्र</div>
-                            <div class="nav-link active py-1 pl-0" href="#">नागपूर</div>
-                            <div class="nav-link active py-1 pl-0" href="#">संपादकीय</div>
-                            <div class="nav-link active py-1 pl-0" href="#">अर्थसंकल्प</div>
-                            <div class="nav-link active py-1 pl-0" href="#">जग </div>
-                        </nav>
+                    <div class="inner-container">
+                        <div class="header-logo d-flex align-items-end py-1">
+                            <div class="day-date ">Tuesday, March 24, 2020</div>
+                        </div>
+                        <div class="header-nav pt-md-2">
+                            <nav class="nav">
+                                <div class="nav-link active py-1 pl-0" href="#">ताज्या </div>
+                                <div class="nav-link active py-1 pl-0" href="#">मुख्य</div>
+                                <div class="nav-link active py-1 pl-0" href="#">राजकारण</div>
+                                <div class="nav-link active py-1 pl-0" href="#">महाराष्ट्र</div>
+                                <div class="nav-link active py-1 pl-0" href="#">नागपूर</div>
+                                <div class="nav-link active py-1 pl-0" href="#">संपादकीय</div>
+                                <div class="nav-link active py-1 pl-0" href="#">अर्थसंकल्प</div>
+                                <div class="nav-link active py-1 pl-0" href="#">जग </div>
+                            </nav>
+                        </div>
                     </div>
                 </div>
 
@@ -1899,9 +1902,13 @@
                 if (jQuery(window).scrollTop() > num) {
                     jQuery('.global-nav-wrapper').addClass('sticky');
                     jQuery('.transparent-hamburger').addClass('sticky');
+                    jQuery('.header').addClass('sticky');
+                    jQuery('.other-sticky').addClass('sticky');
                 } else {
                     jQuery('.global-nav-wrapper').removeClass('sticky');
                     jQuery('.transparent-hamburger').removeClass('sticky');
+                    jQuery('.header').removeClass('sticky');
+                    jQuery('.other-sticky').removeClass('sticky');
                 }
             });
         </script>
