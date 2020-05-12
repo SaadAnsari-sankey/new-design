@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" type="text/css" href="sites/esakal/themes/smg980/css/otherad9993.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Esakal Other Ad</title>
-    <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/4.0.0/css/bootstrap.css" media="all">
-    <script src="//cdn.jsdelivr.net/bootstrap/4.0.0/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="otherad.css">
-    <link rel="stylesheet" href="https://stagingesakal.sakalmediagroup.com/sites/esakal/themes/smg980/font-awesome/css/font-awesome.css" </head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <body>
-
-        <div class="home-page-wrapper">
+	<div class="home-page-wrapper">
 
             <!-- start other ad changes -->
             <div class="ht-zero sticky-nav-helper"></div>
             <div class="main-container top-jacket-ad other-sticky"></div>
-            <div class="main-container tenpx" style="height: 10px; background-color: #f2f4fc;" ></div>
+	    <div class="main-container tenpx" style="height: 10px; background-color: #f2f4fc;z-index: 20;" ></div>
             <div class="left-jacket-ad"></div>
             <div class="right-jacket-ad"></div>
             <!-- <div class="transparent-div"></div> -->
@@ -33,14 +19,14 @@
                             <div class="x-style">X</div>
                         </div>
                         <div class="side-nav-item px-2"></div>
-                        <div class="side-nav-content">ताज्या</div>
-                        <div class="side-nav-content">पुणे</div>
-                        <div class="side-nav-content">मुंबई</div>
-                        <div class="side-nav-content">देश</div>
-                        <div class="side-nav-content">लाईव्ह टीव्ही</div>
-                        <div class="side-nav-content">ग्लोबल</div>
-                        <div class="side-nav-content">कोरोना</div>
-                        <div class="side-nav-content">क्रीडा</div>
+			<div class="side-nav-content"><a href="/tajya-batmya/marathi-news" target="_blank">ताज्या  <a/></div>
+                        <div class="side-nav-content"><a href="/pune-news" target="_blank">पुणे </a></div>
+                        <div class="side-nav-content"><a href="/mumbai-news" target="_blank">मुंबई </a></div>
+                        <div class="side-nav-content"><a href="/desh" target="_blank">देश </a></div>
+                        <div class="side-nav-content"><a href="" target="_blank">लाईव्ह टीव्ही  </a></div>
+                        <div class="side-nav-content"><a href="/global" target="_blank">ग्लोबल </a></div>
+                        <div class="side-nav-content"><a href="/coronavirus" target="_blank">कोरोना  </a></div>
+                        <div class="side-nav-content"><a href="/krida" target="_blank">क्रीडा  </a></div>
                     </div>
                 </div>
             </div>
@@ -52,25 +38,35 @@
 
             <div class="mobile-nav-wrapper flex-column align-items-center justify-content-center">
                 <nav class="w-100 h-100 nav mobile-nav justify-content-around align-items-center">
-                    <div class="mobile-nav-link active" href="#">मुंबई</div>
-                    <div class="mobile-nav-link active" href="#">ताज्या </div>
-                    <div class="mobile-nav-link active" href="#">मुख्य</div>
-                    <div class="mobile-nav-link active" href="#">देश</div>
-                    <div class="mobile-nav-link active" href="#">जग </div>
-                    <div class="mobile-nav-link active" href="#">क्रीडा </div>
-                    <div class="mobile-nav-link active" href="#">पुणे</div>
-                    <div class="mobile-nav-link active" href="#">कोकण</div>
+                    <div class="mobile-nav-link active"><a href="/mumbai-news" target="_blank">मुंबई</a></div>
+                    <div class="mobile-nav-link active"><a href="/tajya-batmya/marathi-news" target="_blank">ताज्या </a></div>
+                    <div class="mobile-nav-link active"><a href="/mukhya-news" target="_blank">मुख्य</a></div>
+                    <div class="mobile-nav-link active"><a href="/desh" target="_blank">देश</a></div>
+                    <div class="mobile-nav-link active"><a href="/global" target="_blank">जग </a></div>
+                    <div class="mobile-nav-link active"><a href="/krida" target="_blank">क्रीडा </a></div>
+                    <div class="mobile-nav-link active"><a href="/pune-news" target="_blank">पुणे</a></div>
+                    <div class="mobile-nav-link active"><a href="/kokan-news" target="_blank">कोकण</a></div>
                 </nav>
             </div>
 
             <div class="global-nav-wrapper global-nav-space">
                 <div class="global-nav d-flex align-items-center">
-                    <div class="global-nav-search d-flex justify-content-end pb-md-1 pr-md-3 pt-md-1">
+<!--                    <div class="global-nav-search d-flex justify-content-end pb-md-1 pr-md-3 pt-md-1">
                         <i class="fa fa-microphone" aria-hidden="true"></i>
-                    </div>
-                    <div class="global-nav-search d-flex justify-content-end pb-md-1">
-                        <i class="fa fa fa-search"></i>
-                    </div>
+                    </div> -->
+		    <div class="voice-search pr-md-3">
+			<span class="icon glyphicon fa fa-microphone" role="application" aria-hidden="true" id="edit-submit-search-view" data-toggle="" aria-haspopup="true" aria-expanded="true"></span>
+		    </div>
+<!--                    <div class="global-nav-search d-flex justify-content-end pb-md-1">
+                        <a href="/search" style="color:white"><i class="fa fa fa-search"></i></a>
+                    </div>-->
+		    <div class="siteSearch">
+			<span class="icon glyphicon glyphicon-search pull-right cursor-pointer" role="application" aria-hidden="true" id="edit-submit-search-view" data-toggle="" aria-haspopup="true" aria-expanded="true">
+				<i class="fa fa fa-search"></i>
+			</span>
+			<?php print $search_form; ?>
+		    </div>
+
                     <nav class="nav">
                         <div id="desktop-side-menu-btn" class="nav-link active" href="#">
                             <span>Sections</span>
@@ -86,15 +82,15 @@
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </div>
-                        <div class="nav-link active" href="#">राजकारण</div>
-                        <div class="nav-link active" href="#">ताज्या </div>
-                        <div class="nav-link active" href="#">मुख्य</div>
-                        <div class="nav-link active" href="#">देश</div>
-                        <div class="nav-link active" href="#">जग </div>
-                        <div class="nav-link active" href="#">क्रीडा </div>
-                        <div class="nav-link active" href="#">पुणे</div>
-                        <div class="nav-link active" href="#">मुंबई</div>
-                        <div class="nav-link active" href="#">कोकण</div>
+                        <div class="nav-link active"><a href="/manoranjan" target="_blank">मनोरंजन </a></div>
+                        <div class="nav-link active"><a href="/tajya-batmya/marathi-news" target="_blank">ताज्या </a></div>
+                        <div class="nav-link active"><a href="/mukhya-news" target="_blank">मुख्य </a></div>
+                        <div class="nav-link active"><a href="/desh" target="_blank">देश </a></div>
+                        <div class="nav-link active"><a href="/global" target="_blank">जग </a> </div>
+                        <div class="nav-link active"><a href="/krida" target="_blank">क्रीडा  </a></div>
+                        <div class="nav-link active"><a href="/pune-news" target="_blank">पुणे </a></div>
+	                <div class="nav-link active"><a href="/mumbai-news" target="_blank">मुंबई </a></div>
+                        <div class="nav-link active"><a href="/kokan-news" target="_blank">कोकण </a></div>
                     </nav>
                 </div>
                 <div class="global-nav-right-div">
@@ -114,14 +110,14 @@
                         </div>
                         <div class="header-nav pt-md-2">
                             <nav class="nav">
-                                <div class="nav-link active py-1 pl-0" href="#">ताज्या </div>
-                                <div class="nav-link active py-1 pl-0" href="#">मुख्य</div>
-                                <div class="nav-link active py-1 pl-0" href="#">राजकारण</div>
-                                <div class="nav-link active py-1 pl-0" href="#">महाराष्ट्र</div>
-                                <div class="nav-link active py-1 pl-0" href="#">नागपूर</div>
-                                <div class="nav-link active py-1 pl-0" href="#">संपादकीय</div>
-                                <div class="nav-link active py-1 pl-0" href="#">अर्थसंकल्प</div>
-                                <div class="nav-link active py-1 pl-0" href="#">जग </div>
+                                <div class="nav-link active py-1 pl-0"><a href="/tajya-batmya/marathi-news" target="_blank">ताज्या </a></div>
+                                <div class="nav-link active py-1 pl-0"><a href="/mukhya-news" target="_blank">मुख्य</a></div>
+                                <div class="nav-link active py-1 pl-0"><a href="/manoranjan" target="_blank">मनोरंजन</a></div>
+                                <div class="nav-link active py-1 pl-0"><a href="/maharashtra-news" target="_blank">महाराष्ट्र</a></div>
+                                <div class="nav-link active py-1 pl-0"><a href="/vidarbha-news/nagpur" target="_blank">नागपूर</a></div>
+                                <div class="nav-link active py-1 pl-0"><a href="/sampadakiya" target="_blank">संपादकीय</a></div>
+                                <div class="nav-link active py-1 pl-0"><a href="/news-topics/union-budget-updates" target="_blank">अर्थसंकल्प</a></div>
+                                <div class="nav-link active py-1 pl-0"><a href="/global" target="_blank">जग</a></div>
                             </nav>
                         </div>
                     </div>
@@ -1763,157 +1759,3 @@
 
 
         </div>
-        <script src='https://stagingesakal.sakalmediagroup.com/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script>
-            if (window.innerWidth < 768) {
-                var mr_drop_open = false;
-                var mc_drop_open = false;
-                var ms_drop_open = false;
-                jQuery(".mr-title").click(function() {
-                    if (!mr_drop_open) {
-                        jQuery(".mr-new-container").css({
-                            "display": "none"
-                        });
-                        jQuery(".mr-title .plus-sign").html('<i class="fa fa-plus"></i>');
-                        jQuery(".mr-title .angle-sign").html('<i class="fa fa-angle-right"></i>');
-                        mr_drop_open = true;
-                    } else {
-                        jQuery(".mr-new-container").css({
-                            "display": "block"
-                        });
-                        mr_drop_open = false
-                        jQuery(".mr-title .plus-sign").html('<i class="fa fa-minus"></i>');
-                        jQuery(".mr-title .angle-sign").html('<i class="fa fa-angle-down"></i>');
-
-                    }
-
-                });
-                jQuery(".mc-title").click(function() {
-                    if (!mc_drop_open) {
-                        jQuery(".mc-new-container").css({
-                            "display": "none"
-                        });
-                        jQuery(".mc-title .plus-sign").html('<i class="fa fa-plus"></i>');
-                        jQuery(".mc-title .angle-sign").html('<i class="fa fa-angle-right"></i>');
-
-
-                        mc_drop_open = true;
-                    } else {
-                        jQuery(".mc-new-container").css({
-                            "display": "block"
-                        });
-                        jQuery(".mc-title .plus-sign").html('<i class="fa fa-minus"></i>');
-                        jQuery(".mc-title .angle-sign").html('<i class="fa fa-angle-down"></i>');
-
-                        mc_drop_open = false
-                    }
-
-                });
-                jQuery(".ms-title").click(function() {
-                    if (!ms_drop_open) {
-                        jQuery(".ms-new-container").css({
-                            "display": "none"
-                        });
-                        jQuery(".ms-title .plus-sign").html('<i class="fa fa-plus"></i>');
-                        jQuery(".ms-title .angle-sign").html('<i class="fa fa-angle-right"></i>');
-
-
-                        ms_drop_open = true;
-                    } else {
-                        jQuery(".ms-new-container").css({
-                            "display": "block"
-                        });
-                        jQuery(".ms-title .plus-sign").html('<i class="fa fa-minus"></i>');
-                        jQuery(".ms-title .angle-sign").html('<i class="fa fa-angle-down"></i>');;
-
-                        ms_drop_open = false;
-                    }
-
-                });
-            }
-        </script>
-
-        <script>
-            jQuery("#mobile-side-menu-btn").click(function(event) {
-                jQuery("#mobile-hamburger").toggleClass("open");
-                jQuery("#main-container-id").toggleClass("open-hamburger");
-                event.stopPropagation();
-            });
-            jQuery("#desktop-side-menu-btn").click(function(event) {
-                jQuery("#mobile-hamburger").toggleClass("open");
-                jQuery("#main-container-id").toggleClass("open-hamburger");
-                event.stopPropagation();
-            });
-            jQuery("#close-side-nav-btn").click(function() {
-                jQuery("#mobile-hamburger").removeClass("open");
-                jQuery("#main-container-id").removeClass("open-hamburger");
-            });
-            jQuery(window).click(function() {
-                jQuery("#mobile-hamburger").removeClass("open");
-                jQuery("#main-container-id").removeClass("open-hamburger");
-            });
-            jQuery('#mobile-hamburger').click(function(event) {
-                // event.stopPropagation();
-            });
-            // jQuery(window).scroll(function() {
-            //     jQuery("#mobile-hamburger").removeClass("open");
-            //     jQuery("#main-container-id").removeClass("open-hamburger");
-            // });
-            // jQuery('#mobile-hamburger').scroll(function(event) {
-            //     jQuery("#mobile-hamburger").removeClass("open");
-            //     jQuery("#main-container-id").removeClass("open-hamburger");
-            // });
-        </script>
-
-        <script>
-            jQuery("#entertainment-carousel").on('slide.bs.carousel', function() {
-                var max = jQuery("#entertainment-carousel .dot-indicators:last-child").data("slide-to");
-                var indicators = jQuery("#entertainment-carousel .dot-indicators.active").data("slide-to");
-                jQuery(".triangle").removeClass("active");
-                if (indicators < 2) {
-                    var a = jQuery(".v-story-indicators").find("[data-slide-to='" + (indicators + 1) + "']").addClass("active");
-                } else if (indicators == max) {
-                    var a = jQuery(".v-story-indicators").find("[data-slide-to='" + 0 + "']").addClass("active");
-                } else {
-                    var a = jQuery(".v-story-indicators").find("[data-slide-to='" + (indicators - 2) + "']").addClass("active");
-                }
-            });
-
-            // jQuery('.entertainment-list').on("click", function() {
-            //     var indicators = jQuery(this).data("slide-to");
-            //     jQuery("#entertainment-carousel").one('slide.bs.carousel', function() {
-            //         jQuery(".dot-indicators").removeClass("active");
-            //         jQuery(".c-indicator").find("[data-slide-to='" + indicators + "']").addClass("active");
-            //     });
-            // });
-        </script>
-
-        <script>
-            jQuery("#go-top-btn").click(function() {
-                window.scroll({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-        </script>
-        <script>
-            var num = jQuery('.sticky-nav-helper').height(); //number of pixels before modifying styles
-            jQuery(window).bind('scroll', function () {
-                if (jQuery(window).scrollTop() > num) {
-                    jQuery('.global-nav-wrapper').addClass('sticky');
-                    jQuery('.transparent-hamburger').addClass('sticky');
-                    jQuery('.header').addClass('sticky');
-                    jQuery('.other-sticky').addClass('sticky');
-                } else {
-                    jQuery('.global-nav-wrapper').removeClass('sticky');
-                    jQuery('.transparent-hamburger').removeClass('sticky');
-                    jQuery('.header').removeClass('sticky');
-                    jQuery('.other-sticky').removeClass('sticky');
-                }
-            });
-        </script>
-
-    </body>
-
-</html>

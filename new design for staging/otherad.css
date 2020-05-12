@@ -1604,6 +1604,10 @@ ol.v-story-indicators li.triangle {
         z-index: 20;
         position: sticky;
     }
+    .tenpx{
+        top:90px;
+        position: sticky;
+    }
 }
 
 
@@ -2160,7 +2164,6 @@ ol.v-story-indicators li.triangle {
     background-image: url(https://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_DontFreak_728x90_v3.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-bottom: 10px;
     margin-left: -10px;
     margin-right: -10px;
 }
