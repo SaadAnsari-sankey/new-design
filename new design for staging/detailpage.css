@@ -1,0 +1,157 @@
+* {
+    /* box-shadow: 0 0 0 1px green; */
+}
+
+body {
+    background-color: gray;
+}
+
+@font-face {
+    font-family: 'sakalfont';
+    font-display: swap;
+    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf) format("truetype"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.eot) format("eot"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.svg) format("svg");
+}
+
+* {
+    font-family: sakalfont;
+}
+
+
+/*================= Start main containers =====================*/
+
+.detail-page-main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    /* position: relative; */
+}
+
+.detail-page-inner-container {
+    width: 93%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.detail-page-bottom-container {
+    display: flex;
+}
+
+.big-image {
+    height: 500px;
+    width: 100%;
+}
+
+.left-container {
+    width: 40%;
+    margin-right: 40px;
+}
+
+.right-container {
+    background: #f7f7f7;
+    width: 50%;
+    margin-top: -260px;
+    padding: 25px 20px;
+    /* background: red; */
+    /* position: relative; */
+    /* top: 200px; */
+    /* left: 30%; */
+}
+
+
+/*================= End main containers =====================*/
+
+.detail-page-main-container a {
+    color: inherit;
+}
+
+.follow-us {
+    margin-top: 300px;
+    color: #808080;
+}
+
+.follow-us-button .btn {
+    padding: 5px;
+    color: white;
+    background: #164B8C;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.follow-us {
+    width: 50%;
+}
+
+.join-us-text {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.join-us-text:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.image-details {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.news-section-title {
+    width: min-content;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: rgb(0, 75, 160);
+}
+
+.news-section-title:after {
+    border-bottom: 2px solid #3F3D3D;
+    content: '';
+    display: block;
+    width: 75%;
+}
+
+.news-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: black;
+    margin-top: 20px;
+}
+
+.news-description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.3;
+    color: black;
+}
+
+.detail-date {
+    font-size: 15px;
+    color: #9f9f9f;
+}
+
+.by-author {
+    color: #0060aa;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.ad-block {
+    background-color: gray;
+    height: 250px;
+    width: 100%;
+    max-width: 450px;
+    /* margin: 10px auto 20px auto; */
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 15px 0px;
+}
