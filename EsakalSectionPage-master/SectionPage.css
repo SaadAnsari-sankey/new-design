@@ -120,21 +120,14 @@ body {
 }
 
 .section-title-desktop {
+    display: inline-block;
     font-weight: 600;
-    font-size: 17px;
-    color: #004b8c;
+    font-size: 12px;
+    color: black;
     position: relative;
     margin-bottom: 1rem;
-}
-
-.section-title-desktop::before {
-    padding-top: 5px;
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 2px;
-    width: 32px;
-    border-bottom: 3px solid gray;
+    margin-top: 15px;
+    font-family: gothamFont;
 }
 
 .ad-block-top-desktop {
@@ -1325,6 +1318,7 @@ ol.v-story-indicators li.triangle {
     }
     .video-story .section-title-desktop::before {
         border-bottom: 3px solid white;
+        border-top: unset;
     }
     .video-box {
         flex-direction: row;
@@ -2643,11 +2637,13 @@ body {
 }
 
 .section-title-desktop {
+    display: inline-block;
     font-weight: 600;
-    font-size: 17px;
-    color: #0060aa;
+    font-size: 12px;
+    color: black;
     position: relative;
     margin-bottom: 1rem;
+    margin-top: 15px;
     font-family: gothamFont;
 }
 
@@ -2655,10 +2651,9 @@ body {
     padding-top: 5px;
     content: "";
     position: absolute;
-    top: 18px;
-    left: 2px;
-    width: 32px;
-    border-bottom: 3px solid gray;
+    bottom: 27px;
+    width: 130px;
+    border-top: 6px solid black;
 }
 
 .ad-block-top-desktop {
