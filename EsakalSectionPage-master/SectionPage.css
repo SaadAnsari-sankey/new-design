@@ -1722,6 +1722,8 @@ ol.v-story-indicators li.triangle {
     left: 4px;
 }
 
+
+/*
 .rf-sub-section .rf-blocks-article-one .article-title:before {
     content: "1.";
     font-size: 16px;
@@ -1739,7 +1741,7 @@ ol.v-story-indicators li.triangle {
 
 .rf-sub-section-title {
     color: #333131;
-}
+} */
 
 .rf-section-news-container .article-title-description:after {
     content: "";
@@ -1907,6 +1909,53 @@ ol.v-story-indicators li.triangle {
 }
 
 @media(min-width: 768px) {
+    .rf-section .article-title-description {
+        height: 98px;
+    }
+    .rf-section {
+        position: relative;
+    }
+    .rf-section .more-top-stories {
+        position: relative;
+    }
+    .rf-section::before {
+        content: "1";
+        position: absolute;
+        z-index: 1;
+        font-size: 42px;
+        font-family: initial;
+        font-style: italic;
+        left: 155px;
+        top: 7%;
+    }
+    .rf-section::after {
+        content: "2";
+        position: absolute;
+        z-index: 1;
+        font-size: 42px;
+        font-family: initial;
+        font-style: italic;
+        left: 155px;
+        top: 58%;
+    }
+    .rf-section .more-top-stories::before {
+        content: "3";
+        position: absolute;
+        z-index: 1;
+        font-size: 42px;
+        font-family: initial;
+        font-style: italic;
+        left: 155px;
+        top: 79%;
+    }
+    .rf-sub-section .rf-blocks-article-one .article-title-description {
+        margin-top: 10px;
+    }
+    .rf-section .rf-sub-section-title {
+        height: 20px;
+        font-weight: bold;
+        font-size: 13px;
+    }
     .cl-section .news-section-title {
         margin-top: 10px !important;
         margin-bottom: 10px !important;
@@ -2014,7 +2063,7 @@ ol.v-story-indicators li.triangle {
         text-align: left;
     }
     .more-top-stories .cl-bg .rf-bg span {
-        color: #164B8C;
+        /* color: #164B8C; */
     }
     .more-top-stories .cl-bg .rf-bg center span:nth-child(2):before {
         display: block;
@@ -2289,6 +2338,7 @@ img {
 .comment {
     color: #999999;
     display: inline-block;
+    display: none;
     font-size: 11px;
     font-family: sakalfont;
     height: 10px;
@@ -2300,6 +2350,7 @@ img {
 .comment2 {
     color: #999999;
     display: inline-block;
+    display: none;
     font-size: 11px;
     font-family: sakalfont;
     height: 10px;
@@ -2356,7 +2407,7 @@ li {
     margin-left: 20px;
     justify-content: center;
     color: #004BA0;
-    font-size: 11px;
+    font-size: 14px;
     font-family: sakalfont;
     font-weight: bold;
     background: #ffffff;
@@ -2880,7 +2931,7 @@ body {
 
 .news-section-title {
     width: min-content;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 1.1;
     color: rgb(0, 75, 160);
@@ -4431,7 +4482,8 @@ ol.v-story-indicators li.triangle {
     left: 4px;
 }
 
-.rf-sub-section .rf-blocks-article-one .article-title:before {
+
+/* .rf-sub-section .rf-blocks-article-one .article-title:before {
     content: "1.";
     font-size: 16px;
 }
@@ -4444,7 +4496,7 @@ ol.v-story-indicators li.triangle {
 .rf-sub-section .rf-blocks-article-others:nth-child(3) .article-title:before {
     content: "3.";
     font-size: 16px;
-}
+} */
 
 .rf-sub-section-title {
     color: #333131;
@@ -4635,9 +4687,10 @@ ol.v-story-indicators li.triangle {
         height: auto;
     }
     .rf-section .rf-section-right .article-title-description .article-title {
-        font-size: 13px;
-        -webkit-line-clamp: 1;
-        max-height: 20px;
+        font-size: 15px;
+        -webkit-line-clamp: 2;
+        max-height: 38px;
+        color: black;
     }
     .rf-section .more-top-stories {
         width: 179px;
@@ -4728,7 +4781,7 @@ ol.v-story-indicators li.triangle {
         text-align: left;
     }
     .more-top-stories .cl-bg .rf-bg span {
-        color: #164B8C;
+        color: black;
         font-family: gothamFont;
     }
     .more-top-stories .cl-bg .rf-bg center span:nth-child(2):before {
@@ -4885,4 +4938,12 @@ div.add-radius {
     .transparent-hamburger {
         top: 540px;
     }
+}
+
+a {
+    color: inherit !important;
+}
+
+a:hover {
+    text-decoration: none !important;
 }
