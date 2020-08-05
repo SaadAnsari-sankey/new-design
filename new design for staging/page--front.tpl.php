@@ -9876,7 +9876,7 @@
                                              </path>
                                          </svg>
                                      </span>
-                                     <!-- <i class="fa fa-sort-asc" aria-hidden="true"></i>		 -->
+                                     <!-- <i class="fa fa-sort-asc" aria-hidden="true"></i> -->
                                      <span class="my-1">Go to Top</span>
                                  </span>
                              </div>
